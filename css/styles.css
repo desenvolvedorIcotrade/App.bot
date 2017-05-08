@@ -83,7 +83,7 @@ h5 {
 .btn-margin-right {
   margin-right: 20px; }
 
-section.intro, section.features-extra, section.sign-up {
+section.intro, section.features-extra, section.pricing {
   background: #fff; }
 
 section.features, section.blog-intro, section.blog, section.sign-up {
@@ -130,7 +130,7 @@ ul li {
   list-style: none; }
 
 .section-padding {
-  padding: 120px 0; }
+  padding: 60px 0; }
 
 .tooltip {
   position: absolute;
@@ -469,6 +469,62 @@ Sign up form
     color: #BCC1C3; }
   .sign-up .signup-form .form-input-group input:-ms-input-placeholder {
     color: #BCC1C3; }
+
+/* ==========================================================================
+Pricing
+========================================================================== */
+.pricing .pricing-box {
+  margin-top: 15px;
+  font-weight: 300;
+  background-color: #ffffff;
+  border-radius: 6px;
+  border: 1px #e1e4e8 solid;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.075); }
+  .pricing .pricing-box .card-block {
+    padding: 10px;
+    text-align: center; }
+  .pricing .pricing-box .card-header {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 2;
+    border-bottom: 1px #e1e4e8 solid; }
+    .pricing .pricing-box .card-header:first-child {
+      border-radius: 0; }
+  .pricing .pricing-box .card-text {
+    padding: 15px;
+    border-right: 1px #e1e4e8 solid; }
+    .pricing .pricing-box .card-text:last-child {
+      border-right: 0; }
+  .pricing .pricing-box .card-title {
+    margin-bottom: 10px;
+    font-size: 10px;
+    font-weight: 300;
+    line-height: 2; }
+  .pricing .pricing-box h4 small {
+    font-size: 10px;
+    font-weight: 600;
+    line-height: 1.1538;
+    color: #aeb0b5; }
+  .pricing .pricing-box .list-group {
+    margin-bottom: 10px; }
+  .pricing .pricing-box .list-group-item {
+    padding: 5px 10px;
+    background-color: transparent;
+    border-color: transparent; }
+.pricing .pricing-box-currency,
+.pricing .pricing-box-price {
+  margin-right: -10px;
+  line-height: 1.214; }
+.pricing .pricing-box-currency {
+  top: -15px;
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: 10px; }
+.pricing .pricing-box-price {
+  font-size: 50px;
+  font-weight: 700; }
 
 /* ==========================================================================
 Icon font (http://www.elegantthemes.com/blog/freebie-of-the-week/free-line-style-icons)
