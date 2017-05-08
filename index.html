@@ -11,9 +11,7 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/normalize.min.css">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/jquery.fancybox.css">
-    <link rel="stylesheet" href="css/flexslider.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/queries.css">
     <link rel="stylesheet" href="css/etline-font.css">
@@ -61,8 +59,8 @@
     </section>
     <section class="intro section-padding" id="intro">
         <div class="container">
-            <div class="row text-center">
-                <div class="col-md-6 col-md-offset-3 ">
+            <div class="row justify-content-center text-center">
+                <div class="col-md-6 ">
                     <h2>How it works</h2>
                 </div>
             </div>
@@ -105,77 +103,73 @@
     <section class="pricing section-padding" id="pricing">
         <div class="container">
             <div class="row text-center">
-                <div class="col-md-8 col-md-offset-2 ">
+                <div class="col-md-12 col-md-offset-0">
                     <h2>Pricing</h2>
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-6">
-                    <div class="card pricing-box">
+                    <div class="pricing-box">
                         <div class="card-header text-uppercase text-center">
                             Personal accounts
                         </div>
-                        <div class="row">
-                            <div class="col-xs-6 card-text text-center">
-                                <div class="card-block">
+                        <div class="card-block">
+                            <div class="row no-gutters">
+                                <div class="col">
                                     <h4 class="card-text">
                                         <sup class="pricing-box-currency">$</sup>
                                         <span class="pricing-box-price">0</span>
-                                        <small class="text-uppercase">/month</small>
+                                        <small class="text-muted text-uppercase">/month</small>
                                     </h4>
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item">Unlimited public repos</li>
+                                        <li class="list-group-item">1 private repo</li>
+                                    </ul>
                                 </div>
-                                <ul class="list-group list-group-flush">
-                                    <li class="list-group-item">Unlimited public repos</li>
-                                    <li class="list-group-item">1 private repo</li>
-                                </ul>
-                            </div>
-                            <div class="col-xs-6 card-text text-center">
-                                <div class="card-block">
+                                <div class="col">
                                     <h4 class="card-text">
                                         <sup class="pricing-box-currency">$</sup>
                                         <span class="pricing-box-price">5</span>
                                         <small class="text-muted text-uppercase">/month</small>
                                     </h4>
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item">Unlimited public repos</li>
+                                        <li class="list-group-item">Unlimited private repo</li>
+                                    </ul>
                                 </div>
-                                <ul class="list-group list-group-flush">
-                                    <li class="list-group-item">Unlimited public repos</li>
-                                    <li class="list-group-item">Unlimited private repo</li>
-                                </ul>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col col-md-6">
-                    <div class="card pricing-box">
+                <div class="col-md-6">
+                    <div class="pricing-box">
                         <div class="card-header text-uppercase text-center">
                             Organisations
                         </div>
-                        <div class="row">
-                            <div class="col-xs-6 card-text text-center">
-                                <div class="card-block">
+                        <div class="card-block">
+                            <div class="row no-gutters">
+                                <div class="col">
                                     <h4 class="card-text">
                                         <sup class="pricing-box-currency">$</sup>
                                         <span class="pricing-box-price">15</span>
                                         <small class="text-muted text-uppercase">/month</small>
                                     </h4>
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item">Unlimited public repos</li>
+                                        <li class="list-group-item">5 private repo</li>
+                                    </ul>
                                 </div>
-                                <ul class="list-group list-group-flush">
-                                    <li class="list-group-item">Unlimited public repos</li>
-                                    <li class="list-group-item">5 private repo</li>
-                                </ul>
-                            </div>
-                            <div class="col-xs-6 card-text text-center">
-                                <div class="card-block">
+                                <div class="col">
                                     <h4 class="card-text">
                                         <sup class="pricing-box-currency">$</sup>
                                         <span class="pricing-box-price">50</span>
                                         <small class="text-muted text-uppercase">/month</small>
                                     </h4>
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item">Unlimited public repos</li>
+                                        <li class="list-group-item">Unlimited private repo</li>
+                                    </ul>
                                 </div>
-                                <ul class="list-group list-group-flush">
-                                    <li class="list-group-item">Unlimited public repos</li>
-                                    <li class="list-group-item">Unlimited private repo</li>
-                                </ul>
                             </div>
                         </div>
                     </div>
@@ -185,8 +179,8 @@
     </section>
     <section class="sign-up section-padding text-center" id="get-started">
         <div class="container">
-            <div class="row">
-                <div class="col-md-6 col-md-offset-3">
+            <div class="row justify-content-center">
+                <div class="col-md-6">
                     <h3>Get started</h3>
                     <p>Dependabot works as a GitHub integration. To get started, we'll take you through the GitHub flow to link your account.</p>
                     <p><a href="https://app.dependabot.com" class="btn btn-fill btn-large">Take me to the app</a></p>
@@ -194,14 +188,10 @@
             </div>
         </div>
     </section>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
     <script src="bower_components/retina.js/dist/retina.js"></script>
-    <script src="js/jquery.fancybox.pack.js"></script>
-    <script src="js/vendor/bootstrap.min.js"></script>
     <script src="js/scripts.js"></script>
-    <script src="js/jquery.flexslider-min.js"></script>
-    <script src="bower_components/classie/classie.js"></script>
-    <script src="bower_components/jquery-waypoints/lib/jquery.waypoints.min.js"></script>
 </body>
 </html>

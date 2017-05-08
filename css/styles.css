@@ -368,6 +368,9 @@ Intro
   font-size: 40px;
   color: #FF5274;
   font-weight: bold; }
+.intro .pr-image {
+  background: #333844 url("../img/polygonal-bg.jpg") no-repeat center center;
+  min-height: 450px; }
 
 .intro-icon {
   display: inline-block;
@@ -481,8 +484,14 @@ Pricing
   border: 1px #e1e4e8 solid;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.075); }
   .pricing .pricing-box .card-block {
-    padding: 10px;
-    text-align: center; }
+    padding: 0; }
+    .pricing .pricing-box .card-block .col {
+      text-align: center;
+      border-right: 1px #e1e4e8 solid; }
+      .pricing .pricing-box .card-block .col:last-child {
+        border-right: 0; }
+      .pricing .pricing-box .card-block .col li {
+        display: inline-block; }
   .pricing .pricing-box .card-header {
     padding-top: 10px;
     padding-bottom: 10px;
@@ -493,10 +502,7 @@ Pricing
     .pricing .pricing-box .card-header:first-child {
       border-radius: 0; }
   .pricing .pricing-box .card-text {
-    padding: 15px;
-    border-right: 1px #e1e4e8 solid; }
-    .pricing .pricing-box .card-text:last-child {
-      border-right: 0; }
+    padding: 15px; }
   .pricing .pricing-box .card-title {
     margin-bottom: 10px;
     font-size: 10px;
