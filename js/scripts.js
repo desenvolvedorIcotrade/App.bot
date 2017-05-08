@@ -57,13 +57,13 @@ $(document).ready(function() {
 				$('section.navigation').addClass('fixed');
 				$('header').css({
 					"border-bottom": "none",
-					"padding": "35px 0"
+					"padding": "20px 0"
 				});
 				$('header .member-actions').css({
-					"top": "26px",
+					"top": "14px",
 				});
 				$('header .navicon').css({
-					"top": "34px",
+					"top": "24px",
 				});
 			} else {
 				$('section.navigation').removeClass('fixed');
