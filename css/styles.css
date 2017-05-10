@@ -229,7 +229,7 @@ Hero
 
 .navigation {
   transition: all 300ms ease-in-out;
-  position: fixed;
+  position: absolute;
   width: 100%;
   z-index: 999; }
 
