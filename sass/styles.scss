@@ -366,27 +366,23 @@ footer {
   a:hover {
     color: $accent-color;
   }
-  ul.footer-group {
-    margin-bottom: 10px;
-  }
-  ul.footer-group li {
-    display: inline-block;
-  }
-  ul.footer-group li a {
-    font-size: $nav-font-size;
-    text-transform: uppercase;
-  }
-  ul.footer-group li a:hover {
-    color: $accent-color;
-  }
-  ul.footer-group li {
-    margin-right: 30px;
-  }
-  ul.footer-group li:last-child {
-    margin-right: 0;
-  }
   .footer-links {
-    margin: 20px 0 20px 0;
+    padding: 20px 0 20px 0;
+  }
+  ul.footer-group {
+    li {
+      display: inline;
+    }
+    li a {
+      font-size: $nav-font-size;
+      text-transform: uppercase;
+    }
+    li a:hover {
+      color: $accent-color;
+    }
+    li {
+      margin-right: 30px;
+    }
   }
 }
 

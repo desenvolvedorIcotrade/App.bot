@@ -374,10 +374,10 @@ footer {
     color: #fff; }
   footer a:hover {
     color: #FF5274; }
-  footer ul.footer-group {
-    margin-bottom: 10px; }
+  footer .footer-links {
+    padding: 20px 0 20px 0; }
   footer ul.footer-group li {
-    display: inline-block; }
+    display: inline; }
   footer ul.footer-group li a {
     font-size: 13px;
     text-transform: uppercase; }
@@ -385,10 +385,6 @@ footer {
     color: #FF5274; }
   footer ul.footer-group li {
     margin-right: 30px; }
-  footer ul.footer-group li:last-child {
-    margin-right: 0; }
-  footer .footer-links {
-    margin: 20px 0 20px 0; }
 
 /* ==========================================================================
 Icon font (http://www.elegantthemes.com/blog/freebie-of-the-week/free-line-style-icons)
