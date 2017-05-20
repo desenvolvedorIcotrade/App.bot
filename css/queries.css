@@ -9,10 +9,6 @@
 		width: 70%;
 	}
 
-	.hero .hero-content {
-		padding-top: 28%;
-	}
-
 }
 
 @media screen and (max-width:1024px) {
@@ -23,10 +19,6 @@
 	header {
 		width: 90%;
 		padding-left: 25px;
-	}
-
-	.hero .hero-content {
-		padding-top: 32%;
 	}
 
 	.header-nav {
@@ -247,10 +239,6 @@
 	}
 
 	@media screen and (max-width:480px) {
-		.hero .hero-content {
-			padding-top: 41%;
-		}
-
 		.hero .btn {
 			display: block;
 			width: 80%;
