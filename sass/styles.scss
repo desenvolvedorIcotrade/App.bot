@@ -231,9 +231,9 @@ header {
 }
 
 /* ==========================================================================
-Intro
+How it works
 ========================================================================== */
-.intro {
+.how-it-works {
   span.icon {
     font-size: 40px;
     color: $accent-color;
@@ -246,14 +246,14 @@ Intro
   }
 }
 
-.intro-icon {
+.how-it-works-icon {
   display: inline-block;
   vertical-align: top;
   padding: 6px 0 0 0;
   margin-right: 20px;
   width: 40px;
 }
-.intro-content {
+.how-it-works-content {
   display: inline-block;
   width: 80%;
 }
