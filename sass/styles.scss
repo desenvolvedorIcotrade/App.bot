@@ -239,11 +239,6 @@ How it works
     color: $accent-color;
     font-weight: bold;
   }
-
-  .pr-image {
-    background: #333844 url("../img/polygonal-bg.jpg") no-repeat center center;
-    min-height: 450px;
-  }
 }
 
 .how-it-works-icon {
@@ -254,6 +249,36 @@ How it works
   width: 40px;
 }
 .how-it-works-content {
+  display: inline-block;
+  width: 80%;
+}
+
+/* ==========================================================================
+Features
+========================================================================== */
+.features {
+  span.icon {
+    font-size: 40px;
+    color: $blue-color;
+    font-weight: bold;
+  }
+
+  a {
+    color: $blue-color;
+  }
+  a:hover {
+    color: $blue-color;
+  }
+}
+
+.features-icon {
+  display: inline-block;
+  vertical-align: top;
+  padding: 6px 0 0 0;
+  margin-right: 20px;
+  width: 40px;
+}
+.features-content {
   display: inline-block;
   width: 80%;
 }
