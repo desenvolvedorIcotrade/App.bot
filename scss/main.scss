@@ -1,0 +1,76 @@
+// @import "bulma/sass/utilities/initial-variables.sass";
+
+@import "normalize.css";
+@import "variables";
+
+body {
+  background: url("../images/hexagons.png");
+  background-position-x: -115px;
+  background-repeat: no-repeat;
+  background-size: 1450px;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 10px;
+  max-width: 880px;
+}
+
+@media only screen and (max-width : 767px) {
+  .container {
+    padding: 0;
+  }
+}
+
+@media only screen and (min-width : 768px) {
+  .one-third-box {
+    width: 33%;
+    padding-right: 20px;
+    box-sizing: border-box;
+    float: left;
+  }
+  .one-third-box:last-child {
+    padding-right: 0;
+  }
+}
+
+.section {
+  text-align: left;
+  margin: 140px 0;
+  padding: 20px;
+  overflow: hidden;
+}
+
+@media only screen and (min-width : 768px) {
+  .section {
+    margin: 180px 0;
+    text-align: center;
+  }
+}
+
+@import "typography";
+@import "components";
+@import "nav";
+@import "hero";
+
+.how-it-works .one-third-box {
+  position: relative;
+}
+
+.floating-number {
+  position: absolute;
+  top: 35px;
+  font-size: 1.3rem;
+  font-weight: 900;
+  color: #E5E9FF;
+}
+
+@media only screen and (min-width : 768px) {
+  .how-it-works .one-third-box {
+    padding-top: 25px;
+  }
+
+  .floating-number {
+    top: 0px;
+  }
+}

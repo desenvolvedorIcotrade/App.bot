@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css" />
+</head>
+
+<body>
+  <div class="container">
+    <nav class="nav">
+      <div class="nav-left">
+        <a class="nav-item">
+          <img class="nav-logo" src="/images/dependabot-logo-full.svg" alt="Dependabot" />
+        </a>
+        <div class="nav-menu-wrapper">
+          <a class="nav-item" href="#how-it-works">How it works</a>
+          <a class="nav-item" href="#features">Features</a>
+          <a class="nav-item" href="#pricing">Pricing</a>
+        </div>
+      </div>
+
+      <div class="nav-right large-screen-only">
+        <div class="nav-item">
+          <a class="button compact" href="//app.dependabot.com/">
+            <span>Log in</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- This "nav-toggle" hamburger menu is only visible on mobile -->
+      <!-- You need JavaScript to toggle the "is-active" class on "nav-menu" -->
+      <div class="nav-right small-screen-only">
+        <a class="nav-toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </a>
+      </div>
+    </nav>
+
+    <div class="section hero">
+      <h2>Automated dependency updates</h2>
+      <p>Dependabot makes keeping your Ruby and JavaScript dependencies up to date easy.</p>
+      <p>
+        <a class="button primary" href="//app.dependabot.com/">Get started</a>
+        <a class="button" href="#how-it-works">Learn how it works</a>
+      </p>
+    </div>
+
+    <div class="section how-it-works">
+      <a name="how-it-works"></a>
+      <h2>How it works</h2>
+      <div class="one-third-box muted">
+        <span class="floating-number">1</span>
+        <img src="/images/icon-check-for-updates.svg" />
+        <h3>Dependabot checks for updates</h3>
+        <p>Every day, Dependabot pulls down your dependency files and looks for any outdated requirements.</p>
+      </div>
+      <div class="one-third-box muted">
+        <span class="floating-number">2</span>
+        <img src="/images/icon-open-prs.svg" />
+        <h3>Opens pull requests</h3>
+        <p>If any of your dependencies are out-of-date, Dependabot opens individual pull requests to bump each one.</p>
+      </div>
+      <div class="one-third-box muted">
+        <span class="floating-number">3</span>
+        <img src="/images/icon-review-and-merge.svg" />
+        <h3>Then you review and merge</h3>
+        <p>You check your tests pass, scan the included changelog and release notes, then hit merge with confidence.</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+  <script>
+    var nav = $(".nav");
+    $(".nav-toggle").click(function () {
+      nav.toggleClass("menu-open");
+    });
+  </script>
+</body>
+
+</html>

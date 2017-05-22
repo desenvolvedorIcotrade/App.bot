@@ -1,0 +1,11 @@
+{
+  "dependencies": {
+    "bootstrap": "4.0.0-alpha.6",
+    "browser-sync": "^2.18.12",
+    "bulma": "^0.4.1",
+    "gulp": "^3.9.1",
+    "gulp-sass": "^3.1.0",
+    "normalize.css": "^7.0.0",
+    "sass-module-importer": "^1.4.0"
+  }
+}
