@@ -12,26 +12,7 @@ body {
 
 .container {
   margin: 0 auto;
-  padding: 0 10px;
-  max-width: 880px;
-}
-
-@media only screen and (max-width : 767px) {
-  .container {
-    padding: 0;
-  }
-}
-
-@media only screen and (min-width : 768px) {
-  .one-third-box {
-    width: 33%;
-    padding-right: 20px;
-    box-sizing: border-box;
-    float: left;
-  }
-  .one-third-box:last-child {
-    padding-right: 0;
-  }
+  max-width: 500px;
 }
 
 .section {
@@ -41,10 +22,34 @@ body {
   overflow: hidden;
 }
 
-@media only screen and (min-width : 768px) {
+// @media only screen and (min-width: 500px) and (max-width: 767px) {
+//   .section {
+//     text-align: center;
+//     max-width: 400px;
+//     margin: 0 auto;
+//   }
+// }
+
+@media only screen and (min-width: 768px) {
+  .container {
+    padding: 0 10px;
+    max-width: 880px;
+  }
+
   .section {
     margin: 180px 0;
     text-align: center;
+  }
+
+  .one-third-box {
+    width: 33%;
+    padding-right: 20px;
+    box-sizing: border-box;
+    float: left;
+  }
+
+  .one-third-box:last-child {
+    padding-right: 0;
   }
 }
 
@@ -55,22 +60,34 @@ body {
 
 .how-it-works .one-third-box {
   position: relative;
+  padding-top: 25px;
+}
+
+.how-it-works-icon {
+  float: right;
+  margin-left: 20px;
+  position: relative;
+  top: 30px;
 }
 
 .floating-number {
   position: absolute;
   top: 35px;
+  right: 0;
   font-size: 1.3rem;
   font-weight: 900;
   color: #E5E9FF;
 }
 
-@media only screen and (min-width : 768px) {
-  .how-it-works .one-third-box {
-    padding-top: 25px;
+@media only screen and (min-width: 768px) {
+  .how-it-works-icon {
+    float: none;
+    margin-left: 0;
+    top: 0;
   }
 
   .floating-number {
     top: 0px;
+    right: auto;
   }
 }
