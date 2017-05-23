@@ -139,6 +139,10 @@
     $(".nav-toggle").click(function () {
       nav.toggleClass("menu-open");
     });
+
+    $("a.nav-item").click(function () {
+      nav.removeClass("menu-open");
+    });
   </script>
 </body>
 

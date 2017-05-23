@@ -547,12 +547,14 @@ p {
     display: block;
     position: fixed;
     top: 0;
-    right: 0px;
-    text-align: center;
+    right: 45px;
+    text-align: right;
+    font-weight: 300;
     background: rgba(255, 255, 255, 0.95);
     width: 100%;
     height: 100%;
-    padding-top: 50px; }
+    padding-top: 50px;
+    z-index: 10; }
   .nav-toggle {
     position: relative;
     top: 3px;
@@ -560,8 +562,9 @@ p {
     cursor: pointer; }
   .menu-open .nav-toggle {
     position: fixed;
-    top: 20px;
-    right: 20px; }
+    top: 30px;
+    right: 42px;
+    z-index: 20; }
   .nav-toggle span {
     background: #0025ff;
     display: block;
