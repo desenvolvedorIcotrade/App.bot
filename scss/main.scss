@@ -1,13 +1,15 @@
-// @import "bulma/sass/utilities/initial-variables.sass";
-
 @import "normalize.css";
 @import "variables";
 
 body {
-  background: url("../images/hexagons.png");
+  background: url("../images/big-hexagons.png");
   background-position-x: -115px;
   background-repeat: no-repeat;
   background-size: 1450px;
+}
+
+.clear-fix {
+  clear: both;
 }
 
 .container {
@@ -21,14 +23,6 @@ body {
   padding: 20px;
   overflow: hidden;
 }
-
-// @media only screen and (min-width: 500px) and (max-width: 767px) {
-//   .section {
-//     text-align: center;
-//     max-width: 400px;
-//     margin: 0 auto;
-//   }
-// }
 
 @media only screen and (min-width: 768px) {
   .container {
@@ -61,14 +55,14 @@ body {
 .how-it-works .one-third-box {
   padding-top: 25px;
   display: flex;
-  flex-direction: row-reverse;
+  flex-direction: row;
 }
 
 .how-it-works-icon {
   position: relative;
   top: 10px;
   float: right;
-  margin-left: 20px;
+  margin-right: 20px;
 }
 
 .how-it-works-icon img {
@@ -79,7 +73,7 @@ body {
 .floating-number {
   position: absolute;
   top: 10px;
-  right: 0;
+  left: 0;
   font-size: 1.3rem;
   font-weight: 900;
   color: #E5E9FF;
@@ -92,7 +86,7 @@ body {
 
   .how-it-works-icon {
     float: none;
-    margin-left: 0;
+    margin-right: 0;
     top: 0;
   }
 
@@ -102,6 +96,45 @@ body {
 
   .floating-number {
     top: -20px;
-    right: auto;
+    left: auto;
   }
+}
+
+.small-hexagons {
+  background:  url("../images/little-hexagons.png") bottom no-repeat;
+  background-position-y: 600px;
+}
+
+.small-hexagons-gradient {
+  background:  linear-gradient(rgba(0, 0, 0, 0) 75%, #F5F6FF) no-repeat;
+}
+
+.screenshot {
+  margin: 80px 0;
+  width: 100%;
+  text-align: center;
+}
+
+.screenshot img {
+  width: 500px;
+  border-radius: 5px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+  max-width: 90%;
+}
+
+.small-hexagons .section {
+  margin-bottom: 0;
+}
+
+.features-bg .section {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.features-bg .section h2 {
+  padding-top: 0;
+}
+
+.features-bg {
+  background:  linear-gradient(#F5F6FF,rgba(0, 0, 0, 0)) no-repeat;
 }
