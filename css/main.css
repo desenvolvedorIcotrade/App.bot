@@ -745,3 +745,27 @@ p {
 .get-started p {
   max-width: 500px;
   margin: 15px auto 20px auto; }
+
+.footer {
+  font-size: 0.9rem; }
+
+@media only screen and (min-width: 768px) {
+  .footer-left {
+    float: left; } }
+
+@media only screen and (max-width: 767px) {
+  .footer-right {
+    margin: 15px 0;
+    max-width: 200px; }
+    .footer-right a {
+      margin: 5px 0;
+      display: block; } }
+
+@media only screen and (min-width: 768px) {
+  .footer-right {
+    margin: 0;
+    float: right; }
+    .footer-right a {
+      margin-right: 0px;
+      margin-left: 20px;
+      display: inline; } }
