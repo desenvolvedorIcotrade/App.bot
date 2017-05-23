@@ -20,6 +20,7 @@
   width: 160px;
   position: relative;
   top: 3px;
+  z-index: 20;
 }
 
 .nav-left {
@@ -63,16 +64,22 @@
 
   .menu-open .nav-menu-wrapper {
     display: block;
-    position: fixed;
+    position: absolute;
     top: 0;
-    right: 45px;
-    text-align: right;
+    right: 0;
+    width: 100%;
+    border-radius: 10px;
     font-weight: 300;
     background: rgba(255, 255, 255, 0.95);
-    width: 100%;
-    height: 100%;
     padding-top: 50px;
     z-index: 10;
+  }
+
+  .menu-open .nav-menu-container {
+    max-width: 500px;
+    padding: 10px 20px;
+    margin: 0 auto;
+    text-align: right;
   }
 
   .nav-toggle {
@@ -83,9 +90,6 @@
   }
 
   .menu-open .nav-toggle {
-    position: fixed;
-    top: 30px;
-    right: 42px;
     z-index: 20;
   }
 

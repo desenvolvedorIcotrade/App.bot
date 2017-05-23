@@ -436,7 +436,11 @@ body {
 
 html {
   color: #383B49;
-  font-family: "Source Sans Pro", sans-serif; }
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 14px; }
+  @media only screen and (min-width: 768px) {
+    html {
+      font-size: 16px; } }
 
 a {
   color: #0025ff;
@@ -515,7 +519,8 @@ p {
   margin-right: 16px;
   width: 160px;
   position: relative;
-  top: 3px; }
+  top: 3px;
+  z-index: 20; }
 
 .nav-left {
   float: left; }
@@ -545,25 +550,26 @@ p {
     display: none; }
   .menu-open .nav-menu-wrapper {
     display: block;
-    position: fixed;
+    position: absolute;
     top: 0;
-    right: 45px;
-    text-align: right;
+    right: 0;
+    width: 100%;
+    border-radius: 10px;
     font-weight: 300;
     background: rgba(255, 255, 255, 0.95);
-    width: 100%;
-    height: 100%;
     padding-top: 50px;
     z-index: 10; }
+  .menu-open .nav-menu-container {
+    max-width: 500px;
+    padding: 10px 20px;
+    margin: 0 auto;
+    text-align: right; }
   .nav-toggle {
     position: relative;
     top: 3px;
     display: block;
     cursor: pointer; }
   .menu-open .nav-toggle {
-    position: fixed;
-    top: 30px;
-    right: 42px;
     z-index: 20; }
   .nav-toggle span {
     background: #0025ff;
@@ -610,13 +616,14 @@ p {
 
 .how-it-works-icon {
   position: relative;
-  top: 10px;
+  top: 6px;
   float: right;
   margin-right: 20px; }
 
 .how-it-works-icon img {
   position: relative;
-  top: 30px; }
+  top: 30px;
+  width: 5rem; }
 
 .floating-number {
   position: absolute;

@@ -17,6 +17,10 @@ gulp.task('serve', ['sass'], function() {
 gulp.task('sass', function() {
   return gulp.src("scss/*.scss")
     .pipe(sass({ importer: moduleImporter() }))
+    .on('error', function(error) {
+      console.error(error);
+      this.emit('end');
+    })
     .pipe(gulp.dest("css"))
     .pipe(browserSync.stream());
 });
