@@ -678,12 +678,27 @@ p {
   display: flex;
   flex-direction: column;
   text-align: left; }
+  @media only screen and (min-width: 768px) {
+    .feature-boxes {
+      flex-direction: row;
+      flex-wrap: wrap; } }
 
-@media only screen and (min-width: 768px) {
-  .feature-boxes {
-    flex-direction: row;
-    flex-wrap: wrap; }
-  .feature-box {
-    width: 50%;
-    box-sizing: border-box;
-    padding: 10px; } }
+.feature-box {
+  display: flex;
+  flex-direction: row-reverse;
+  padding: 10px 0; }
+  @media only screen and (min-width: 768px) {
+    .feature-box {
+      flex-direction: column;
+      text-align: left;
+      width: 50%;
+      box-sizing: border-box;
+      padding: 20px 10px; } }
+
+.feature-icon {
+  display: flex;
+  align-items: center;
+  padding-left: 30px; }
+  @media only screen and (min-width: 768px) {
+    .feature-icon {
+      padding-left: 0; } }

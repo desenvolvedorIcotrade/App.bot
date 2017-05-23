@@ -150,17 +150,30 @@ body {
   display: flex;
   flex-direction: column;
   text-align: left;
-}
-
-@media only screen and (min-width: 768px) {
-  .feature-boxes {
+  @media only screen and (min-width: 768px) {
     flex-direction: row;
     flex-wrap: wrap;
   }
+}
 
-  .feature-box {
+.feature-box {
+  display: flex;
+  flex-direction: row-reverse;
+  padding: 10px 0;
+  @media only screen and (min-width: 768px) {
+    flex-direction: column;
+    text-align: left;
     width: 50%;
     box-sizing: border-box;
-    padding: 10px;
+    padding: 20px 10px;
+  }
+}
+
+.feature-icon {
+  display: flex;
+  align-items: center;
+  padding-left: 30px;
+  @media only screen and (min-width: 768px) {
+    padding-left: 0;
   }
 }
