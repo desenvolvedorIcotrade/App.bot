@@ -408,6 +408,23 @@ body {
   padding: 20px;
   overflow: hidden; }
 
+.how-it-works-boxes {
+  display: flex;
+  flex-direction: column; }
+
+.how-it-works-box {
+  flex: 1;
+  margin: 0 10px;
+  padding-top: 25px;
+  display: flex;
+  flex-direction: row; }
+
+.how-it-works-box:first-child {
+  margin-left: 0; }
+
+.how-it-works-box:last-child {
+  margin-right: 0; }
+
 @media only screen and (min-width: 768px) {
   .container {
     padding: 0 10px;
@@ -415,13 +432,8 @@ body {
   .section {
     margin: 180px 0;
     text-align: center; }
-  .one-third-box {
-    width: 33%;
-    padding-right: 20px;
-    box-sizing: border-box;
-    float: left; }
-  .one-third-box:last-child {
-    padding-right: 0; } }
+  .how-it-works-boxes {
+    flex-direction: row; } }
 
 html {
   color: #383B49;
@@ -593,11 +605,6 @@ p {
   .hero .button {
     margin: 20px 10px; } }
 
-.how-it-works .one-third-box {
-  padding-top: 25px;
-  display: flex;
-  flex-direction: row; }
-
 .how-it-works-icon {
   position: relative;
   top: 10px;
@@ -617,7 +624,7 @@ p {
   color: #E5E9FF; }
 
 @media only screen and (min-width: 768px) {
-  .how-it-works .one-third-box {
+  .how-it-works-box {
     flex-direction: column; }
   .how-it-works-icon {
     float: none;
