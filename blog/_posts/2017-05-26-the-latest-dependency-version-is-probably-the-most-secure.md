@@ -67,7 +67,7 @@ However, consider the ease with which an “always up-to-date” user can apply 
 
 **Put another way, if your dependencies are totally up-to-date you’re just as secure as someone pursuing a late adopter strategy, but have the additional advantage that you can respond to new disclosures more easily.**
 
-Finally, it’s not surprising to see the “reactive” strategy perform poorest, but the margin of its defeat is. It’s over twice as likely to be vulnerable as the “always up-to-date” strategy, and the “fix by upgrading” flow is likely to be just as difficult as for the “late adopter”.
+Finally, it's surprising to see the “reactive” strategy perform so badly. It’s twice as likely to be vulnerable as the “always up-to-date” strategy, and the “fix by upgrading” flow is likely to be just as difficult as for the “late adopter”.
 
 ### Nice data, so what should I do about it?
 
