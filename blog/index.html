@@ -6,9 +6,11 @@ title: Dependabot Blog
   <h2>Blog</h2>
 
   {% for post in site.posts %}
-  <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
-  <span class="post-date"><time datetime="{{ post.date|date:"%F" }}">{{ post.date|date:"%b %d, %Y" }}</time></span><br/>
-  {{ post.excerpt }}
-  <p><a href="{{ post.url }}">Read more...</a></p>
+  <div class="blog-preview">
+    <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+    <span class="post-date"><time datetime="{{ post.date|date:"%F" }}">{{ post.date|date:"%b %d, %Y" }}</time></span><br/>
+    {{ post.excerpt }}
+    <p><a href="{{ post.url }}">Read more...</a></p>
+  </div>
   {% endfor %}
 </div>
