@@ -175,12 +175,27 @@
     padding-left: 0;
   }
 }
+
+.pricing-alert {
+  min-width: 50%;
+  height: 50px;
+  line-height: 50px;
+  margin: 1rem auto;
+  background-color: #d6ffd6;
+  border-radius: 10px;
+  text-align: center;
+  @media only screen and (min-width: 768px) {
+    width: 500px;
+  }
+}
+
 .pricing-boxes {
   display: flex;
   flex-direction: column;
   max-width: 500px;
   margin: 0 auto;
 }
+
 .pricing-box {
   flex: 1;
   padding: 12px 0;
@@ -190,16 +205,20 @@
     padding: 12px;
   }
 }
+
 .plan-details h3 {
   margin: 0;
 }
+
 .plan-details p {
   margin: 0.5rem 0;
 }
+
 .plan-details {
   flex: 1;
   padding-right: 1.5rem;
 }
+
 .price {
   font-size: 1.2rem;
   color: $text-muted;
@@ -207,6 +226,7 @@
   display: flex;
   align-items: center;
 }
+
 .price .month {
   margin-left: 5px;
   font-size: 0.9rem;

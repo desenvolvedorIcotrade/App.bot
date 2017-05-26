@@ -446,6 +446,9 @@ html {
     html {
       font-size: 16px; } }
 
+b {
+  font-weight: 700; }
+
 a {
   color: #0025ff;
   text-decoration: none; }
@@ -710,6 +713,18 @@ li {
   @media only screen and (min-width: 768px) {
     .feature-icon {
       padding-left: 0; } }
+
+.pricing-alert {
+  min-width: 50%;
+  height: 50px;
+  line-height: 50px;
+  margin: 1rem auto;
+  background-color: #d6ffd6;
+  border-radius: 10px;
+  text-align: center; }
+  @media only screen and (min-width: 768px) {
+    .pricing-alert {
+      width: 500px; } }
 
 .pricing-boxes {
   display: flex;

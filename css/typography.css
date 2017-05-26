@@ -8,6 +8,9 @@ html {
     html {
       font-size: 16px; } }
 
+b {
+  font-weight: 700; }
+
 a {
   color: #0025ff;
   text-decoration: none; }
