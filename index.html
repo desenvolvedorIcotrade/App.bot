@@ -10,91 +10,93 @@
 </head>
 
 <body>
-  <div class="container">
-    <nav class="nav">
-      <div class="nav-left">
-        <a class="nav-item">
-          <img class="nav-logo" src="/images/dependabot-logo-full.svg" alt="Dependabot" />
-        </a>
-        <div class="nav-menu-wrapper">
-          <div class="nav-menu-container">
-            <a class="nav-item" href="#how-it-works">How it works</a>
-            <a class="nav-item" href="#features">Features</a>
-            <a class="nav-item" href="#pricing">Pricing</a>
+  <div class="main-background">
+    <div class="container">
+      <nav class="nav">
+        <div class="nav-left">
+          <a class="nav-item">
+            <img class="nav-logo" src="/images/dependabot-logo-full.svg" alt="Dependabot" />
+          </a>
+          <div class="nav-menu-wrapper">
+            <div class="nav-menu-container">
+              <a class="nav-item" href="#how-it-works">How it works</a>
+              <a class="nav-item" href="#features">Features</a>
+              <a class="nav-item" href="#pricing">Pricing</a>
+            </div>
           </div>
         </div>
-      </div>
 
-      <div class="nav-right large-screen-only">
-        <div class="nav-item">
-          <a class="button compact" href="//app.dependabot.com/auth/sign-in?immediate=true">
-            <span>Log in</span>
+        <div class="nav-right large-screen-only">
+          <div class="nav-item">
+            <a class="button compact" href="//app.dependabot.com/auth/sign-in?immediate=true">
+              <span>Log in</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- This "nav-toggle" hamburger menu is only visible on mobile -->
+        <!-- You need JavaScript to toggle the "is-active" class on "nav-menu" -->
+        <div class="nav-right small-screen-only">
+          <a class="nav-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
           </a>
         </div>
-      </div>
+      </nav>
 
-      <!-- This "nav-toggle" hamburger menu is only visible on mobile -->
-      <!-- You need JavaScript to toggle the "is-active" class on "nav-menu" -->
-      <div class="nav-right small-screen-only">
-        <a class="nav-toggle">
-          <span></span>
-          <span></span>
-          <span></span>
-        </a>
+      <div class="section hero">
+        <h2>Automated dependency updates</h2>
+        <p>Dependabot makes keeping your Ruby and JavaScript dependencies up to date easy.</p>
+        <p>
+          <a class="button primary" href="//app.dependabot.com/auth/sign-up">Get started</a>
+          <a class="button" href="#how-it-works">Learn how it works</a>
+        </p>
       </div>
-    </nav>
-
-    <div class="section hero">
-      <h2>Automated dependency updates</h2>
-      <p>Dependabot makes keeping your Ruby and JavaScript dependencies up to date easy.</p>
-      <p>
-        <a class="button primary" href="//app.dependabot.com/auth/sign-up">Get started</a>
-        <a class="button" href="#how-it-works">Learn how it works</a>
-      </p>
     </div>
-  </div>
 
-  <div class="small-hexagons">
-    <div class="small-hexagons-gradient">
-      <div class="container">
-        <div class="section how-it-works">
-          <a name="how-it-works"></a>
-          <h2>How it works</h2>
-          <div class="how-it-works-boxes">
-            <div class="how-it-works-box">
-              <div class="how-it-works-icon">
-                <span class="floating-number">1</span>
-                <img src="/images/icon-check-for-updates.svg" />
+    <div class="small-hexagons">
+      <div class="small-hexagons-gradient">
+        <div class="container">
+          <div class="section how-it-works">
+            <a name="how-it-works"></a>
+            <h2>How it works</h2>
+            <div class="how-it-works-boxes">
+              <div class="how-it-works-box">
+                <div class="how-it-works-icon">
+                  <span class="floating-number">1</span>
+                  <img src="/images/icon-check-for-updates.svg" />
+                </div>
+                <div class="how-it-works-description">
+                  <h3>Dependabot checks for updates</h3>
+                  <p>Every day, Dependabot pulls down your dependency files and looks for any outdated requirements.</p>
+                </div>
               </div>
-              <div class="how-it-works-description">
-                <h3>Dependabot checks for updates</h3>
-                <p>Every day, Dependabot pulls down your dependency files and looks for any outdated requirements.</p>
+              <div class="how-it-works-box">
+                <div class="how-it-works-icon">
+                  <span class="floating-number">2</span>
+                  <img src="/images/icon-open-prs.svg" />
+                </div>
+                <div class="how-it-works-description">
+                  <h3>Opens pull requests</h3>
+                  <p>If any of your dependencies are out-of-date, Dependabot opens individual pull requests to bump each one.</p>
+                </div>
+              </div>
+              <div class="how-it-works-box">
+                <div class="how-it-works-icon">
+                  <span class="floating-number">3</span>
+                  <img src="/images/icon-review-and-merge.svg" />
+                </div>
+                <div class="how-it-works-description">
+                  <h3>Then you review and merge</h3>
+                  <p>You check your tests pass, scan the included changelog and release notes, then hit merge with confidence.</p>
+                </div>
               </div>
             </div>
-            <div class="how-it-works-box">
-              <div class="how-it-works-icon">
-                <span class="floating-number">2</span>
-                <img src="/images/icon-open-prs.svg" />
-              </div>
-              <div class="how-it-works-description">
-                <h3>Opens pull requests</h3>
-                <p>If any of your dependencies are out-of-date, Dependabot opens individual pull requests to bump each one.</p>
-              </div>
+            <div class="clear-fix"></div>
+            <div class="screenshot">
+              <img src="/images/screenshot.png" alt="Screenshot of a Dependabot pull request" />
             </div>
-            <div class="how-it-works-box">
-              <div class="how-it-works-icon">
-                <span class="floating-number">3</span>
-                <img src="/images/icon-review-and-merge.svg" />
-              </div>
-              <div class="how-it-works-description">
-                <h3>Then you review and merge</h3>
-                <p>You check your tests pass, scan the included changelog and release notes, then hit merge with confidence.</p>
-              </div>
-            </div>
-          </div>
-          <div class="clear-fix"></div>
-          <div class="screenshot">
-            <img src="/images/screenshot.png" alt="Screenshot of a Dependabot pull request" />
           </div>
         </div>
       </div>

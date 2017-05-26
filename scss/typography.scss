@@ -29,12 +29,10 @@ h3 {
   font-weight: 600;
 }
 
-p {
-}
-
 @media only screen and (min-width : 768px) {
   h2 {
     font-size: 2.05rem;
+    line-height: 2.1rem;
   }
 
   h3 {
@@ -44,6 +42,14 @@ p {
   body {
     font-weight: 300;
   }
+}
+
+ul, ol {
+  padding-left: 2rem;
+}
+
+li {
+  margin-bottom: 1rem;
 }
 
 .muted {
