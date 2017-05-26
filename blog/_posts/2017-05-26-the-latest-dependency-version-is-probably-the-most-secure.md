@@ -34,16 +34,16 @@ We’ll profile the position each strategy puts us in on the day of a vulnerabil
 
 First up, we need to rigorously define each strategy:
 
-1. **Always up-to-date:** Always on the latest version the day _before_ a security vulnerability is disclosed. (For fairness, we assume they haven’t updated for the day on the day of the vulnerability disclosure itself.)
+1. **Always up-to-date:** Always on the latest version the day _before_ a security vulnerability is disclosed. (For fairness, we assume they are one day behind on the day that the vulnerability is disclosed.)
 2. **Late adopter:** Tracks the latest minor version that has been out for at least a month. Always on the latest patch release of this version
-3. **Reactive:** Equally likely to have added / updated the dependency at any time in the year preceding the vulnerability disclosure. Used the latest version of the dependency when they did
+3. **Reactive:** Equally likely to have added or updated the dependency at any time in the year preceding the vulnerability disclosure. Used the latest version of the dependency when they did
 
 Combining the above with Rubysec’s advisories database and Rubygems’ versions API, we’ve got everything we need.
 
 
 ### The code
 
-We've open-sourced the code to replicate all of the results below in [this Jupyter notebook][jupyter-notebook]. It's heavily commented, so anybody should be able to follow along. The repo contains full setup instructions and a Dockerfile to make it easy to get up and running. If you want to experiment with the data, we'd love to hear what you find.
+We've [open-sourced][jupyter-notebook] the code to replicate all of the results below. The code is heavily commented, so anybody should be able to follow along. The repo contains full setup instructions and a Dockerfile to make it easy to get up and running. If you want to experiment with the data, we'd love to hear what you find.
 
 
 ### The results
