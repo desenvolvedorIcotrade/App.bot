@@ -479,6 +479,11 @@ ul, ol {
 li {
   margin-bottom: 1rem; }
 
+hr {
+  border: none;
+  border-top: 1px solid #ccc;
+  margin: 2rem 0; }
+
 .muted {
   color: #636779; }
 
