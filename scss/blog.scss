@@ -44,3 +44,22 @@
 .blog .entry {
   margin-top: 1.5rem;
 }
+
+.blog .cta {
+  color: $text-muted;
+  @media only screen and (max-width : 767px) {
+    margin: 1.5rem 0;
+  }
+}
+
+.blog .footer {
+  @media only screen and (max-width : 767px) {
+    margin: 0;
+  }
+}
+
+.blog .footer .footer-right {
+  @media only screen and (max-width : 767px) {
+    display: none;
+  }
+}

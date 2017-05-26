@@ -33,3 +33,17 @@
 
 .blog .entry {
   margin-top: 1.5rem; }
+
+.blog .cta {
+  color: #636779; }
+  @media only screen and (max-width: 767px) {
+    .blog .cta {
+      margin: 1.5rem 0; } }
+
+@media only screen and (max-width: 767px) {
+  .blog .footer {
+    margin: 0; } }
+
+@media only screen and (max-width: 767px) {
+  .blog .footer .footer-right {
+    display: none; } }
