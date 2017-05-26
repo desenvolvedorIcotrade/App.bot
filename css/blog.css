@@ -4,6 +4,9 @@
   font-weight: 400;
   color: #222; }
 
+.blog .nav-item {
+  padding-left: 10px; }
+
 .blog .container {
   max-width: 500px;
   padding: 0 20px; }
