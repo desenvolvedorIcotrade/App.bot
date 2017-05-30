@@ -1,5 +1,11 @@
-# The Dependabot landing page
+# The Dependabot website and blog
 
-## Developing
+Find it at https://dependabot.com/
+
+## Working on the website
 
 Run `yarn` then `gulp serve`.
+
+## Working on the blog
+
+Run `bundle` then `jekyll serve`.
