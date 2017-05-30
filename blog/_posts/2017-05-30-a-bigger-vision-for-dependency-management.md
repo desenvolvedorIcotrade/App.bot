@@ -4,8 +4,8 @@ title:  "A bigger vision for dependency management"
 date:   2017-05-30 09:31:11 +0100
 ---
 
-Last week we launched [Dependabot][dependabot-homepage], a dependable robot
-who’ll keep your dependencies up-to-date for you. We've got big plans for it.
+Last week we launched Dependabot, a dependable robot who’ll keep your
+dependencies up-to-date for you. We've got big plans for it.
 
 ### The small dream: automating the leg-work of updating
 _TL;DR: There used to be tedious manual work involved in updating a dependency.
@@ -71,7 +71,6 @@ Excited about what we could achieve with Dependabot? The biggest thing you could
 do to help is to use it! The service is free for open source projects and always
 will be.
 
-[dependabot-homepage]: https://dependabot.com
 [moj-pr]: https://github.com/ministryofjustice/prison-visits-2/pull/871
 [security-post]: https://dependabot.com/blog/the-latest-dependency-version-is-probably-the-most-secure
 [semver]: http://semver.org/
