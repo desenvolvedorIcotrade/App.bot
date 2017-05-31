@@ -23,6 +23,7 @@ url: "https://dependabot.com"
 permalink: /:categories/:title
 twitter_username: dependabot
 github_username:  dependabot
+author: Dependabot
 feed:
   path: blog/atom.xml
 
