@@ -84,3 +84,9 @@
     line-height: 1.2rem; }
   .blog th, .blog td {
     padding: 0.6rem; } }
+
+.blog .image-medium {
+  text-align: center; }
+
+.blog .image-medium img {
+  max-width: 500px; }
