@@ -81,28 +81,3 @@ You’re welcome :-)
 [jupyter-notebook]: https://github.com/dependabot/gem-vulnerability-analysis/blob/master/notebooks/vulnerability-analysis.ipynb
 [dependabot]: https://dependabot.com/
 
-<style>
-table {
-  margin: 0 auto 2rem auto;
-}
-
-th, td {
-  text-align: right;
-  padding: 0.2rem 0.6rem;
-}
-
-td:first-child {
-  text-align: left;
-}
-
-@media only screen and (max-width : 767px) {
-  table {
-    font-size: 0.9rem;
-    line-height: 1.2rem;
-  }
-
-  th, td {
-    padding: 0.6rem;
-  }
-}
-</style>

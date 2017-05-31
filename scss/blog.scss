@@ -91,3 +91,29 @@
 .blog-preview {
   margin: 3rem 0;
 }
+
+.blog {
+  table {
+    margin: 0 auto 2rem auto;
+  }
+
+  th, td {
+    text-align: right;
+    padding: 0.2rem 0.6rem;
+  }
+
+  td:first-child {
+    text-align: left;
+  }
+
+  @media only screen and (max-width : 767px) {
+    table {
+      font-size: 0.9rem;
+      line-height: 1.2rem;
+    }
+
+    th, td {
+      padding: 0.6rem;
+    }
+  }
+}
