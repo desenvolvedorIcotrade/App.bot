@@ -22,7 +22,7 @@ We’ve blogged in detail about [why you should keep your dependencies up-to-dat
 There are other apps out there that can help you with the above, but Dependabot is the only one that supports multiple languages and has an [open-source core][bump-core].
 
 ### Dependa-ok-this-looks-awesome-how-do-I-sign-up?
-Just click on one of the links below. The app is totally free for the first month if you sign up before June 1st 2017.
+Just click on one of the links below. The app is totally free for the first month if you sign up before June 14th 2017.
 
 
 [dependabot-github-app]: https://github.com/apps/dependabot
