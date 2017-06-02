@@ -13,7 +13,7 @@ Click "Add" and you're all done---Dependabot will check for updates for you
 every day, and create PRs when it finds any.
 
 <p class="image-medium">
-  <img alt="Weekly bumping demo" src="/images/blog/weekly-bumping.gif">
+  <img alt="Weekly bumping demo" src="/images/blog/php-example.gif">
 </p>
 
 Thanks to Pete Hamilton for all his work on this improvement!
