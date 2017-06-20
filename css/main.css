@@ -727,6 +727,36 @@ hr {
     .feature-icon {
       padding-left: 0; } }
 
+.statuses-table {
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+  margin: 0 auto; }
+
+.status-row {
+  flex: 1;
+  padding: 12px 0;
+  text-align: left;
+  display: flex; }
+  @media only screen and (min-width: 768px) {
+    .status-row {
+      padding: 12px; } }
+
+.status-details p {
+  margin: 0.5rem 0; }
+
+.status-details {
+  flex: 1;
+  padding-left: 1.5rem; }
+
+.status {
+  display: flex;
+  align-items: center;
+  min-width: 175px; }
+
+.status img {
+  max-width: 95%; }
+
 .pricing-alert {
   min-width: 50%;
   height: 50px;
