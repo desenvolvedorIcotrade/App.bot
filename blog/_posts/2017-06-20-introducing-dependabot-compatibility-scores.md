@@ -4,8 +4,8 @@ title:  "Introducing Dependabot compatibility scores"
 date:   2017-06-20 10:30:11 +0100
 ---
 
-From today, all new Dependabot pull requests will include details the percentage
-of test suites that pass for a given update, in the form a compatibility badge:
+From today, Dependabot pull requests will include details the percentage of test
+suites that pass for the relevant update, in the form a compatibility badge:
 
 <p class="image-medium">
   <img src="https://api.dependabot.com/badges/ci_status?dependency-name=pg&amp;package-manager=bundler&amp;previous-version=0.20.0&amp;new-version=0.21.0" alt="Compatibility score badge">
