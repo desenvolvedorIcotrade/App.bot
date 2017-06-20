@@ -12,8 +12,10 @@ suites that pass for the relevant update, in the form a compatibility badge:
 </p>
 
 We've written up details of how the badge is calculated [here][compatibility_score_webpage].
-It's very much a beta feature, and we expect it to evolve, but we couldn't wait
-to get it into your hands.
+
+Compatability scores are a beta feature, but we couldn't wait to get them into
+your hands. We're looking forward to them becoming more robust as more people
+use Dependabot.
 
 As always, we'd love your [feedback][feedback].
 
