@@ -669,6 +669,14 @@ hr {
 .small-hexagons-gradient {
   background: linear-gradient(rgba(255, 255, 255, 0) 75%, #f5f6ff) no-repeat; }
 
+.compatibility-badge {
+  margin: 40px 0;
+  width: 100%; }
+
+.compatibility-badge img {
+  width: 400px;
+  max-width: 90%; }
+
 .screenshot {
   margin: 80px 0;
   width: 100%;
