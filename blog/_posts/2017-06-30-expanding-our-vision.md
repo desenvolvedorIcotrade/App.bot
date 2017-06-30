@@ -20,6 +20,6 @@ idea to surpass it for ambition:
 - **Automate refactors for breaking changes** by machine learning the changes
    Dependabot users are making to their codebases to accommodate them
 
-A robot can dream, right?
+To be clear, we know this would be insanely hard. But a robot can dream, right?
 
 [vision_blog_post]: https://dependabot.com/blog/a-bigger-vision-for-dependency-management
