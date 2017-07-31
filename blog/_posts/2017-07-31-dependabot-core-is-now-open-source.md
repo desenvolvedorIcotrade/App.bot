@@ -36,10 +36,12 @@ our app is pretty much just a UI and database. If we were paranoid about someone
 stealing our nascent business then we'd be keeping it under lock and key.
 
 We're open-sourcing Dependabot Core because we're more interested in it having
-an impact than we are in making a buck from it. We'd love you to use Dependabot,
-so that we can continue to develop it, but if you want to build and host your
-own version this library should make doing so a *lot* easier.
+an impact than we are in making a buck from it. We'd love you to use
+[Dependabot][dependabot], so that we can continue to develop it, but if you want
+to build and host your own version this library should make doing so a *lot*
+easier.
 
 If you use Dependabot Core we'd love to hear about what you build!
 
+[dependabot]: https://dependabot.com
 [dependabot-core]: https://github.com/dependabot/dependabot-core
