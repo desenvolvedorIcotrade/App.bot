@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Dependabot's core logic is now open-source"
-date:   2017-07-29 10:30:11 +0100
+date:   2017-07-31 10:30:11 +0100
 ---
 
 We've open-sourced [Dependabot Core][dependabot-core], the core logic behind
