@@ -15,7 +15,7 @@ no known bugs in Bundler's resolution logic.
 
 ### The bug
 
-First up, some quick, relevant info about how Dependabot works:
+First up, some quick, relevant info about how Dependabot surfaced the issue:
 
 - Dependabot creates pull requests for any outdated dependencies in a
 project's `Gemfile`. It's a little like running `bundle update <dependency>` for
