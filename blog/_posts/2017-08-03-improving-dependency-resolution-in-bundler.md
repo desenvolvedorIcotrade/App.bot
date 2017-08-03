@@ -10,8 +10,8 @@ files" issue, only to immediately close it. Hunting down that bug took me right
 to the core of Bundler's dependency resolution logic, and I spent three weeks
 working to improve it.
 
-Happily, the result is a 2x speedup and fixes for all known bugs in Bundler's
-resolution process.
+Happily, the result is a 2x speedup and a bunch of fixes that mean there are now
+no known bugs in Bundler's resolution logic.
 
 ### The bug
 
