@@ -54,7 +54,7 @@ If, like me, you have no idea what that is, here's the mental model that I used
 when thinking about it:
 
 - Take each "requirement" from a project's `Gemfile` and `Gemfile.lock` and put
-them in a big array. Each requirement will relate to a single dependency.
+them in a big array. Each requirement will relate to a single dependency
 - Dynamically build a "tree" from the requirements array as follows:
   - Pick a requirement from the array (intelligently, but more on that later)
   to become a node in the tree
@@ -163,10 +163,10 @@ was missing some potentially conflict-resolving edges:
 requirement was `x >= 1.0`, the second requirement was `x < 2.0` and the third
 requirement was `x > 2.0`. Relaxing *either* the second or the third requirement
 would potentially fix the conflict, but with Molinillo's original logic,
-relaxing the second requirement wouldn't be considered.
+relaxing the second requirement wouldn't be considered
 - We might only have got to the current requirement via a previous conflict,
 that could have been unwound differently. This case is so horribly complicated
-you're probably best off just reading the [spec][spec-pr] to understand it.
+you're probably best off just reading the [spec][spec-pr] to understand it
 
 Great. Add a fix for those and we're sorted, right? Well, yes, as long as it's
 fast. Which my first attempts were not - considering all those other vertices
