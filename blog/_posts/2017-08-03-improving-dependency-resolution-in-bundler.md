@@ -40,7 +40,7 @@ Molinillo, without really needing to get to know it. I created a
 [pull request][failed-pr] that got the tests passing and fixed my issue locally.
 Job done, right? Sadly not. Patching Dependabot with my "fix" caused the same
 error to occur on a *different* set of Gemfiles! Arghhh! Clearly I didn't know
-what I was doing, and was going to need to figure it out
+what I was doing, and was going to need to if I was going to fix this bug.
 
 ### OK, so how's this thing supposed to work?
 
