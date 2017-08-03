@@ -20,7 +20,8 @@ First up, some quick, relevant info about how Dependabot works:
 - Dependabot creates pull requests for any outdated dependencies in a
 project's `Gemfile`. It's a little like running `bundle update <dependency>` for
 each dependency
-- To do so, Dependabot piggy-backs off of Bundler's resolution logic
+- To do so, Dependabot piggy-backs off of Bundler's resolution logic. (If you're
+curious, the logic is [here][dependabot-resolution].)
 - If Bundler raises an error during resolution,  Dependabot catches it,
 categorises it, and creates a relevant issue on the project's repository.
 
@@ -234,3 +235,4 @@ for individuals.
 [segiddins]: https://github.com/segiddins
 [ruby-together]: https://rubytogether.org/
 [dependabot]: https://dependabot.com/
+[dependabot-resolution]: https://github.com/dependabot/dependabot-core/blob/v0.11.2/lib/dependabot/update_checkers/ruby/bundler.rb#L63-L77
