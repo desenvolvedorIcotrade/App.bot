@@ -11,7 +11,7 @@ to the core of Bundler's dependency resolution logic, and I spent three weeks
 working to improve it.
 
 Happily, the result is a 2x speedup for Bundler's resolution logic and a bunch
-of fixes that it now has no known bugs.
+of fixes that mean it now has no known bugs.
 
 ### The bug
 
