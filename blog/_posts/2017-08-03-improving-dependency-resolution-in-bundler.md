@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Improving dependency resolution in Bundler"
+title:  "Fixing Bundler's dependency resolution algorithm and making it 2x faster"
 date:   2017-08-03 10:30:11 +0100
 ---
 
@@ -10,8 +10,8 @@ files" issue, only to immediately close it. Hunting down that bug took me right
 to the core of Bundler's dependency resolution logic, and I spent three weeks
 working to improve it.
 
-Happily, the result is a 2x speedup and a bunch of fixes that mean there are now
-no known bugs in Bundler's resolution logic.
+Happily, the result is a 2x speedup for Bundler's resolution logic and a bunch
+of fixes that it now has no known bugs.
 
 ### The bug
 
