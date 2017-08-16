@@ -14,7 +14,7 @@ your `gemspec`, it will open a pull request to extend that range. Here's
 
 We hope the above will help maintainers out a bit. Whilst the PRs won't be as
 easy to merge as they are for apps (since they'll mainly be for major version
-bumps), they should at least provide timely reminders to review your gemspec.
+bumps), they should at least provide timely reminders to review your `gemspec`.
 If that makes employing a [pessimistic versioning strategy][pessimistic-blog-post]
 easier it could help make dependency management a bit better for everyone.
 
