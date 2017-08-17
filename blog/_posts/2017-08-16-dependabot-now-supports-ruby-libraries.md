@@ -21,6 +21,17 @@ easier it could help make dependency management a bit better for everyone.
 [Dependabot][dependabot] is totally free for open source, and always will be,
 so this one is on us. 🎁
 
+**Update:** A couple of people have asked exactly how Dependabot updates the
+requirements in the gemspec. The TL;DR is:
+- for **runtime dependencies** it extends the range to include the new version,
+  whilst continuing to allow all previously supported versions
+- for **development dependencies** it does the same, except when an `=` or `~>`
+  matcher is used, in which case it drops support for the previous version
+
+If you want all the gory detail then the code is, of course,
+[open source][update-code].
+
 [example]: https://github.com/greysteil/spot-gps/pull/7
 [pessimistic-blog-post]: https://blog.codeship.com/optimists-guide-pessimistic-library-versioning/
 [dependabot]: https://dependabot.com
+[update-code]: https://github.com/dependabot/dependabot-core/blob/08c9e937f382361c32725cfefa2c9b3d69861b32/lib/dependabot/update_checkers/ruby/bundler.rb#L325-L345
