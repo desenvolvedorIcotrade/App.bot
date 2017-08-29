@@ -2,7 +2,7 @@ source "https://rubygems.org"
 ruby RUBY_VERSION
 
 group :jekyll_plugins do
-  gem "github-pages", "~> 156"
+  gem "github-pages", "~> 157"
   gem "jekyll-feed", "~> 0.6"
 end
 
