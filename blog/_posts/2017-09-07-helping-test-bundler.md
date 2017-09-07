@@ -15,9 +15,9 @@ Dependabot's pull requests.
 
 ### How you can help
 
-The main way you can help is by reporting anything odd to us. We're pretty
-confident the resolver is already bug-free, and have tested it extensively
-ourselves, but if you see anything odd, we want to know.
+We're pretty confident the resolver is already bug-free, and have tested it
+extensively ourselves, but if you see anything odd, we want to know. Just
+comment on the Dependabot PR as you normally would.
 
 If you want to get more involved, an easy place to start would be upgrading the
 version of Bundler you run locally and reporting any issues you find to the
