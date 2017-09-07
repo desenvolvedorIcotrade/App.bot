@@ -13,15 +13,21 @@ We've had the privilege of working with the Bundler team on
 Bundler 1.16.0. Now we're helping test it by using a pre-release to generate
 Dependabot's pull requests.
 
-We hope the above will mean Bundler's updated resolver is bug-free when it's
-released (and we already caught two regressions!). However, Dependabot doesn't
-interact with Bundler CLI at all, so we'd love to encourage others to help test
-that. If you're game, just update to the latest Bundler locally and report back
-any issues you have [here][bundler-github]:
+### How you can help
+
+The main way you can help is by reporting anything odd to us. We're pretty
+confident the resolver is already bug-free, and have tested it extensively
+ourselves, but if you see anything odd, we want to know.
+
+If you want to get more involved, an easy place to start would be upgrading the
+version of Bundler you run locally and reporting any issues you find to the
+Bundler team. You can update by running:
 
 ```
 gem update bundler --pre
 ```
+
+### Future plans
 
 In the future, we're planning to roll out a way for Dependabot users to opt-in
 to running pre-releases of other dependencies against their test suites to
@@ -31,4 +37,3 @@ early, and save everyone some time. That's a story for another day, though.
 ✌️
 
 [improving-resolution]: https://dependabot.com/blog/improving-dependency-resolution-in-bundler
-[bundler-github]: https://github.com/bundler/bundler
