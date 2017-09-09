@@ -759,21 +759,17 @@ hr {
 
 .language-boxes {
   display: flex;
-  flex-direction: row; }
+  flex-direction: row;
+  flex-wrap: wrap; }
 
 .language-box {
   flex: 1;
   padding-top: 25px;
   display: flex;
   flex-direction: column;
-  margin: 0 10px;
-  text-align: center; }
-
-.language-box:first-child {
-  margin-left: 0; }
-
-.language-box:last-child {
-  margin-right: 0; }
+  margin: 0 0px;
+  text-align: center;
+  min-width: 100px; }
 
 .language-icon {
   position: relative;
