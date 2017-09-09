@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Dependabot can now automatically update your Git submodules"
+title:  "Dependabot can now help keep your Git submodules up-to-date"
 date:   2017-09-09 10:00:00 +0100
 ---
 
