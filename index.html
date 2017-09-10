@@ -281,7 +281,7 @@
   </script>
   <script>
     $.getJSON("https://api.dependabot.com/stats", function(jd) {
-      $("#merged-prs").html(jd.merged_pull_requests_count)
+      $("#merged-prs").html(jd.merged_pull_requests_count.toLocaleString("en"))
     });
   </script>
   <script>
