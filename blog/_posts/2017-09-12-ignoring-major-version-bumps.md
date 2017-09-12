@@ -7,13 +7,13 @@ date:   2017-09-12 10:30:00 +0100
 We just shipped a handy new feature: you can now ask Dependabot to ignore a
 major or minor version of a dependency.
 
-Say you're using React Router 3.x, and know the upgrade path to `4.x` isn't
+Say you're using React Router 3.x, and know the upgrade path to 4.x isn't
 straightforward. You'd love to do the work, but just can't prioritise it right
 now.
 
-Previously, Dependabot would troll you every time a new `4.x` release came out.
+Previously, Dependabot would troll you every time a new 4.x release came out.
 We liked to call it reminding, but let's be honest. Specifying a version
-constraint in your `package.json` wouldn't help either - Dependabot would just
+constraint in your package.json wouldn't help either - Dependabot would just
 bump that constraint for you, too.
 
 Now, when you close a PR, Dependabot will give you the option to ignore that
