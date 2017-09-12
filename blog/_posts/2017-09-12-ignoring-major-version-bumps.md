@@ -19,7 +19,7 @@ bump that constraint for you, too.
 Now, when you close a PR, Dependabot will give you the option to ignore that
 major/minor version.
 
-<Image from https://github.com/greysteil/where-is-grey/pull/113>
+<img alt="Weekly bumping demo" src="/images/blog/ignoring-versions.png">
 
 The above is our solution to "the Gemfile problem": how, or whether, Dependabot
 should interpret constraints in a project's manifest file. Now that you can
