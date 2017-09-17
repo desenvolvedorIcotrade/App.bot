@@ -255,7 +255,7 @@
           </a>
         </div>
       </div>
-      <p>... plus <span id="active-customers">250</span> more, who have merged over <span id="merged-prs">5,000</span> Dependabot pull requests.
+      <p>... plus <span id="active-accounts">250</span> more, who have merged over <span id="merged-prs">5,000</span> Dependabot pull requests.
     </div>
   </div>
 
@@ -318,7 +318,7 @@
     </div>
   </div>
 
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
   <script>
     var nav = $(".nav");
     $(".nav-toggle").click(function () {
@@ -327,6 +327,11 @@
 
     $("a.nav-item").click(function () {
       nav.removeClass("menu-open");
+    });
+  </script>
+  <script>
+    $.getJSON("https://api.dependabot.com/stats", function(jd) {
+      $("#active-accounts").html((jd.active_accounts_count - 8).toLocaleString("en"))
     });
   </script>
   <script>
