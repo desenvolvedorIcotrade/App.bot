@@ -318,7 +318,7 @@
     </div>
   </div>
 
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
   <script>
     var nav = $(".nav");
     $(".nav-toggle").click(function () {
@@ -327,6 +327,11 @@
 
     $("a.nav-item").click(function () {
       nav.removeClass("menu-open");
+    });
+  </script>
+  <script>
+    $.getJSON("https://api.dependabot.com/stats", function(jd) {
+      $("#merged-prs").html(jd.merged_pull_requests_count.toLocaleString("en"))
     });
   </script>
   <script>
