@@ -763,13 +763,15 @@ hr {
   flex-wrap: wrap; }
 
 .language-box {
-  flex: 1;
   padding-top: 25px;
   display: flex;
   flex-direction: column;
   margin: 0 0px;
   text-align: center;
-  min-width: 100px; }
+  min-width: 120px; }
+  @media only screen and (min-width: 768px) {
+    .language-box {
+      flex: 1; } }
 
 .language-icon {
   position: relative;
