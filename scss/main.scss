@@ -302,6 +302,10 @@
   }
 }
 
+.customers p:last-child {
+  margin-bottom: 0;
+}
+
 .pricing-alert {
   min-width: 50%;
   margin: 1rem auto;
