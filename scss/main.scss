@@ -229,33 +229,41 @@
 }
 
 .language-box {
-  padding-top: 25px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
   display: flex;
   flex-direction: column;
-  margin: 0 0px;
-  text-align: center;
-  min-width: 120px;
+  text-align: left;
+  padding: 15px;
+  margin: 10px;
+  min-width: 90px;
+  max-width: 126px;
+  height: 120px;
   @media only screen and (min-width: 768px) {
     flex: 1;
   }
 }
 
 .language-icon {
-  position: relative;
-  top: 6px;
-  float: none;
-  margin-right: 0;
+  text-align: left;
   top: 0;
 }
 
 .language-icon img {
-  position: relative;
-  top: auto;
-  width: 5rem;
+  width: 50px;
 }
 
-.language-description {
-  margin-top: 10px;
+.language-caveat {
+  position: relative;
+  bottom: -20px;
+  height: 40px;
+  font-size: 0.8em;
+  color: #b6b6b6;
+}
+
+.language-name {
+  font-weight: 400;
 }
 
 .customers-bg .section {
