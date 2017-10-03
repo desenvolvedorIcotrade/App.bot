@@ -3,12 +3,8 @@
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 842 700" style="enable-background:new 0 0 842 700;" xml:space="preserve">
 <style type="text/css">
-	.st0{fill:#BF1E54;}
-	.st1{fill:#DC95C0;}
-	.st2{fill:#2A255F;}
+	.st2{fill:#7C82B6;}
 </style>
-<polygon class="st0" points="22.6,249.7 70.8,138.2 388.8,17.6 496.2,65.8 382.2,475.8 "/>
-<polygon class="st1" points="496.2,115.1 426,347.5 503.9,475.8 817.4,295.5 767,187.5 "/>
 <path class="st2" d="M842,295.2c0-0.5,0-1.1-0.1-1.6c-0.1-0.5-0.2-1-0.3-1.5c-0.1-0.4-0.1-0.8-0.3-1.3c-0.3-0.8-0.6-1.5-1-2.2
 	c-0.1-0.1-0.1-0.3-0.2-0.4L778.7,181c-1-1.7-2.3-3.1-3.7-4.3c0,0-0.1,0-0.1,0c-1.5-1.2-3.2-2-5-2.5c0,0,0,0,0,0l-260.3-70.6
 	l9.9-33.7c0-0.1,0-0.2,0-0.2c0.4-1.5,0.6-3,0.5-4.6c0-0.2,0-0.5,0-0.7c-0.1-1.2-0.3-2.4-0.8-3.7c-0.1-0.2-0.2-0.4-0.3-0.6
@@ -33,5 +29,5 @@
 	 M171,168.8l-67.2-30.6l97.8-36.5L171,168.8z M172.6,205.7l156.8,228l-282.5-181L172.6,205.7z M388.6,411.6l-31.1-275l125.8-47
 	L388.6,411.6z M440.9,337l35.4-120.5L487.9,419L440.9,337z M495.7,184.1l-6.5-11.2l12.2-41.3l58.3,15.8L495.7,184.1z M505.9,223.3
 	l129.6,35.2L518,435.3L505.9,223.3z M552.2,436.4l113-169.9l124.6,33.8L552.2,436.4z M696.6,244.8l64-36.7l36.7,64L696.6,244.8z"/>
-	<text x="-150" y="670" font-family="Campton, Verdana, sans-serif" font-size="150" font-weight="bold" fill="#2a255f">ruby together</text>
+	<text x="-150" y="670" font-family="Campton, Verdana, sans-serif" font-size="150" font-weight="bold" fill="#7C82B6">ruby together</text>
 </svg>

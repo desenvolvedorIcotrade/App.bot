@@ -258,6 +258,15 @@
   margin-top: 10px;
 }
 
+.customers-bg .section {
+  margin-bottom: 0;
+  padding-bottom: 60px;
+}
+
+.customers-bg {
+  background: linear-gradient(rgba(255, 255, 255, 0), rgba(245, 246, 255, 1)) no-repeat;
+}
+
 .customer-logos {
   display: flex;
   flex-direction: row;
@@ -270,15 +279,15 @@
   flex-direction: column;
   margin: 20px 0px;
   text-align: center;
-  width: 100px;
+  width: 80px;
   height: 40px;
   position: relative;
   float: none;
-  padding: 0 10px;
+  padding: 0 20px;
   @media only screen and (min-width: 768px) {
     height: 72px;
-    width: 180px;
-    padding: 0 20px;
+    width: 140px;
+    padding: 0 40px;
     margin: 30px 0px;
   }
 }
@@ -306,48 +315,101 @@
   margin-bottom: 0;
 }
 
+.pricing-bg .section {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-bottom: 60px;
+}
+
+.pricing-bg {
+  background-color: rgba(245, 246, 255, 1);
+}
+
 .pricing-boxes {
   display: flex;
   flex-direction: column;
-  max-width: 500px;
-  margin: 0 auto;
-}
-
-.pricing-box {
-  flex: 1;
-  padding: 12px 0;
-  text-align: left;
-  display: flex;
   @media only screen and (min-width: 768px) {
-    padding: 12px;
+    flex-direction: row;
   }
 }
 
-.plan-details h3 {
-  margin: 0;
+.pricing-box {
+  background-color: #fff;
+  margin: 10px 0;
+  padding: 7px;
+  display: flex;
+  flex-direction: row;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  justify-content: space-between;
+  @media only screen and (min-width: 768px) {
+  margin: 10px;
+    text-align: center;
+    max-width: 215px;
+    display: block;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .pricing-box:first-child {
+    margin-left: auto;
+  }
+  .pricing-box:last-child {
+    margin-right: auto;
+  }
+}
+
+.plan-name {
+  margin: 10px;
+  display: block;
+  @media only screen and (min-width: 768px) {
+    height: 50px;
+    margin: 0;
+  }
 }
 
 .plan-details p {
-  margin: 0.5rem 0;
-}
-
-.plan-details {
+  margin: 10px;
+  max-width: 300px;
   flex: 1;
-  padding-right: 1.5rem;
+  @media only screen and (min-width: 768px) {
+    margin: 0.5rem 0;
+  }
 }
 
 .price {
-  font-size: 1.2rem;
+  margin: auto 20px auto 0;
+  min-width: 80px;
+  font-size: 2.5rem;
   color: $text-muted;
-  font-weight: 500;
+  font-weight: 400;
   display: flex;
-  align-items: center;
+  text-align: right;
+  flex-direction: column;
+  @media only screen and (min-width: 768px) {
+    text-align: center;
+    margin: 60px 0px 20px;
+    font-size: 4.5rem;
+    display: block;
+  }
 }
 
 .price .month {
-  margin-left: 5px;
-  font-size: 0.9rem;
-  margin-top: 5px;
+  display: block;
+  font-size: 1rem;
+  font-weight: 300;
+  margin: 10px 0px 0px;
+  @media only screen and (min-width: 768px) {
+    margin: 40px 0px 20px;
+  }
+}
+
+.get-started-bg .section {
+  margin-top: 0;
+}
+
+.get-started-bg {
+  background: linear-gradient(rgba(245, 246, 255, 1), rgba(255, 255, 255, 0)) no-repeat;
 }
 
 .get-started h2 {
