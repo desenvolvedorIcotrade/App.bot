@@ -114,8 +114,16 @@
   background-position-y: 600px;
 }
 
+.small-hexagons-rotated {
+  background:  url("../images/little-hexagons-rotated.png") bottom no-repeat;
+}
+
 .small-hexagons-gradient {
   background:  linear-gradient(rgba(255, 255, 255, 0) 75%, rgba(245, 246, 255, 1)) no-repeat;
+}
+
+.small-hexagons-rotated-gradient {
+  background:  linear-gradient(rgba(245, 246, 255, 1), rgba(255, 255, 255, 0) 75%) no-repeat;
 }
 
 .compatibility-badge {
@@ -145,13 +153,20 @@
   margin-bottom: 0;
 }
 
+.small-hexagons-rotated .section {
+  margin-top: 0;
+  padding-top: 80px;
+}
+
 .features-bg .section {
   margin-top: 0;
   padding-top: 0;
+  margin-bottom: 0;
+  padding-bottom: 0;
 }
 
 .features-bg {
-  background: linear-gradient(rgba(245, 246, 255, 1), rgba(255, 255, 255, 0)) no-repeat;
+  background-color: rgba(245, 246, 255, 1);
 }
 
 .feature-boxes {
