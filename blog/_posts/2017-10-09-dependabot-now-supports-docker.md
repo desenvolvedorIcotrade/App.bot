@@ -17,8 +17,10 @@ Here's how it works:
 - If there's an update available, Dependabot updates the `FROM` line in your
   Dockerfile and creates a PR for you
 
-As you can see the above is pretty basic, but we hope it will at least serve
-as a helpful reminder for you when new images are released.
+As you can see the above is pretty basic - it just updates the base image,
+rather than attempting to update the packages in your container. That said,
+we hope it will at least serve as a helpful reminder when new images are
+released.
 
 We wanted to launch Docker support as early as possible, so have released it
 in beta. As such, we currently **don't** support the following:
