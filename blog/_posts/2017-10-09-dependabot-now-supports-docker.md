@@ -4,8 +4,11 @@ title:  "Announcing Docker support"
 date:   2017-10-09 10:00:00 +0100
 ---
 
-Using Docker? Dependabot can now help you keep the base image your `Dockerfile`
-inherits from up-to-date.
+Using Docker? Dependabot can now help you keep your base image up-to-date.
+
+<p class="image-medium">
+  <img alt="Weekly bumping demo" src="/images/blog/docker-logo.svg">
+</p>
 
 Here's how it works:
 - Dependabot looks for a "Dockerfile" in your repo, and pulls it down
@@ -25,11 +28,11 @@ in beta. As such, we currently **don't** support the following:
 - **Digests**. Currently, Dependabot will only update images that specify a
   tag. In future, we'd like to be able to support Dockerfiles that specify a
   digest for their base image.
-- **Non-numeric tags**. Currently, Dependabot only supports tags like `17.04`.
-  If you specify your Ubuntu tag as `zesty`, Dependabot will leave it alone. In
-  future, we'd like to update tags like `3.6.1-slim` to `3.6.3-slim`.
+- **Non-numeric tags**. Currently, Dependabot will only update tags like
+  `17.04`. In future, we'd like to support updating tags like `3.6.1-slim` to
+  `3.6.3-slim`, too. We'll probably never support updating tags like `zesty`,
+  though.
 
 To get started, just click the "Add project" button and select the repo
 you'd like to automate updates for. Select "Docker" from the list of
-languages, and click "Add". Dependabot will check for updates for you
-every day, and create pull requests when it finds any.
+languages, and click "Add".
