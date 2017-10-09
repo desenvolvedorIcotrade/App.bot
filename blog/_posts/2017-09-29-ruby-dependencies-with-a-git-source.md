@@ -26,5 +26,9 @@ Dependabot, [let us know][feedback-link]!
 
 🍸
 
+**Update:** Dependabot can now update dependencies that use version-like git
+tags, too! If you're using tags like `v0.11.0` in your Gemfile then you can
+expect Dependabot to start updating those tags to the latest version.
+
 [feedback-request]: https://github.com/dependabot/feedback/issues/23
 [feedback-link]: https://github.com/dependabot/feedback
