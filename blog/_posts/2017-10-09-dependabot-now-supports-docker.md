@@ -27,9 +27,10 @@ in beta. As such, we currently **don't** support the following:
 - **Private Docker registries.** We want to add support for these as soon as
   possible, but it requires some extra work on our side. (We'll need to give
   you a place to enter your Docker credentials.)
-- **Digests**. Currently, Dependabot will only update images that specify a
+- **Digests**. ~~Currently, Dependabot will only update images that specify a
   tag. In future, we'd like to be able to support Dockerfiles that specify a
-  digest for their base image.
+  digest for their base image.~~ Update (12th October 2017): Dependabot now
+  supports digests! 🎉
 - **Non-numeric tags**. Currently, Dependabot will only update tags like
   `17.04`. In future, we'd like to support updating tags like `3.6.1-slim` to
   `3.6.3-slim`, too. We'll probably never support updating tags like `zesty`,
