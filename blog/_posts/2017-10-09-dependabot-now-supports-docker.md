@@ -31,10 +31,11 @@ in beta. As such, we currently **don't** support the following:
   tag. In future, we'd like to be able to support Dockerfiles that specify a
   digest for their base image.~~ Update (12th October 2017): Dependabot now
   supports digests! 🎉
-- **Non-numeric tags**. Currently, Dependabot will only update tags like
+- **Non-numeric tags**. ~~Currently, Dependabot will only update tags like
   `17.04`. In future, we'd like to support updating tags like `3.6.1-slim` to
   `3.6.3-slim`, too. We'll probably never support updating tags like `zesty`,
-  though.
+  though.~~ Update (21st October 2017): Dependabot now supports tags like
+  `3.6.1-slim`! 🎉
 
 To get started, just click the "Add project" button and select the repo
 you'd like to automate updates for. Select "Docker" from the list of
