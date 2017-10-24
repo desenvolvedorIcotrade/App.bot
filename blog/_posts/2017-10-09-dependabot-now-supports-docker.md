@@ -7,7 +7,7 @@ date:   2017-10-09 10:00:00 +0100
 Using Docker? Dependabot can now help you keep your base image up-to-date.
 
 <p class="image-medium">
-  <img alt="Weekly bumping demo" src="/images/blog/docker-logo.svg">
+  <img alt="Docker logo" src="/images/blog/docker-logo.svg">
 </p>
 
 Here's how it works:
@@ -24,9 +24,10 @@ released.
 
 We wanted to launch Docker support as early as possible, so have released it
 in beta. As such, we currently **don't** support the following:
-- **Private Docker registries.** We want to add support for these as soon as
+- **Private Docker registries.** ~~We want to add support for these as soon as
   possible, but it requires some extra work on our side. (We'll need to give
-  you a place to enter your Docker credentials.)
+  you a place to enter your Docker credentials.)~~ Update (24th October 2017):
+  Dependabot now supports private Docker registries! 🎉
 - **Digests**. ~~Currently, Dependabot will only update images that specify a
   tag. In future, we'd like to be able to support Dockerfiles that specify a
   digest for their base image.~~ Update (12th October 2017): Dependabot now
