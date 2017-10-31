@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Dependabot now supports npm5"
+title:  "Dependabot now supports npm"
 date:   2017-10-31 10:00:00 +0100
 ---
 
