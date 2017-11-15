@@ -48,7 +48,7 @@ and don't send cold emails. All we do is build a great product.
 Despite that, we've not only seen increased signup numbers from GitHub
 Marketplace, but real revenue. Almost every day, a new organisation finds us and
 starts paying for the service. In almost every case we've had no previous
-contact with.
+contact with them.
 
 ### It's working for other apps, too (we think)
 
