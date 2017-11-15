@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "GitHub Marketplace's effect on signups/revenue"
+title:  "The GitHub Marketplace effect on distribution"
 date:   2017-11-15 17:00:00 +0000
 ---
 
