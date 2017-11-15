@@ -5,8 +5,8 @@ date:   2017-11-15 17:00:00 +0000
 ---
 
 It's been a month since Dependabot was added to the
-[GitHub Marketplace][marketplace] and a new cohort of apps are being added now.
-Time to crunch some numbers on the effect it's had on Dependabot.
+[GitHub Marketplace][marketplace]. Time to crunch some numbers on the effect
+it's had.
 
 ### GitHub Marketplace drives a lot of signups
 
