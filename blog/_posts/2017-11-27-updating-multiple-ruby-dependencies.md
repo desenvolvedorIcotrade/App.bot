@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Dependabot now eats thorny Ruby dependency updates for breakfast"
+title:  "Handling thorny Ruby dependency updates"
 date:   2017-11-27 13:00:00 +0000
 ---
 
@@ -11,13 +11,14 @@ hack updates where multiple dependencies needed to be updated at the same time.
 Now it can.
 
 Want an example? Check out [this pull request][brew_pull_request]. Here, the
-Gemfile specified version constraints on both `bootstrap` and `popper_js`. Since
-the `bootstrap` gem also depended on `popper_js` with quite a tight version
-requirement the only way to update was to bump both gems at the same time.
+Gemfile specified both `bootstrap` and `popper_js` and `bootstrap` also relied
+on `popper_js` as a sub-dependency. All the specifications had tight version
+requirements, so the only way to update was to bump both gems at the same time.
 
-Want another example? We see situations like [this][rspec_pull_request] a lot.
+Don't think it's that common? Well, we see lots of Gemfiles specifying both
+[`rspec` and `rspec-rails`][rspec_pull_request], for example.
 
-There used to be a name for these kinds to difficult updates - it was
+There used to be a name for difficult updates like these - it was
 "dependency hell". With it's new multi-dependency updating powers, Dependabot
 should be able to make that a thing of the past.
 
