@@ -32,7 +32,7 @@
   .small-screen-only {
     display: none; }
   .nav-item {
-    padding: 0 10px; } }
+    padding: 0 9px; } }
 
 /* Phones */
 @media only screen and (max-width: 767px) {
