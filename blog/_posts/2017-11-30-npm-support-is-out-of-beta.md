@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "npm support is out of beta"
+title:  "Dependabot's npm support is out of beta"
 date:   2017-11-30 16:00:00 +0000
 ---
 
