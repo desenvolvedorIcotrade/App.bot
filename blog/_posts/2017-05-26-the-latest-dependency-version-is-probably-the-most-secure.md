@@ -1,10 +1,10 @@
 ---
 layout: post
-title:  "The latest dependency version is probably the most secure"
+title:  "Ten years of Rubysec data analysed to find the most secure dependency strategy"
 date:   2017-05-26 11:31:11 +0100
 ---
 
-Want to keep your application as secure as possible? According to the last 10 years of Rubysec data, the most secure, actionable strategy is to keep your dependencies on the bleeding edge, even _before_ a vulnerability is disclosed.
+Want to keep your application as secure as possible? According to the last 10 years of Rubysec data, the most secure, actionable strategy is to keep your dependencies on the bleeding edge.
 
 
 ### Competing strategies
@@ -12,7 +12,7 @@ Want to keep your application as secure as possible? According to the last 10 ye
 Let’s consider three competing strategies for dependency management:
 
 1. **Always up-to-date:** Use the latest version at all times. _“It may be raw, but I want the fixes and new features as soon as possible.”_
-2. **Late adopter:** Wait a month before upgrading to new major or minor versions. _“Older versions are tried and tested.”_
+2. **Late adopter:** Wait a month before upgrading to new major or minor versions (except for security vulnerabilities). _“Older versions are tried and tested.”_
 3. **Reactive:** Upgrade as-and-when there’s a security vulnerability or business need. _“Proactive dependency management is busy-work.”_
 
 I’ve heard arguments made for all three of the above. Let’s confront them with the data.
