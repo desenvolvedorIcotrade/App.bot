@@ -9,9 +9,9 @@ We've just made Dependabot much easier to use with JavaScript:
 - **No lockfile required:** You can now use Dependabot on JavaScript projects
   that don't have a lockfile. We'll bump the requirements in your `package.json`
   to ensure they always cover the latest version
-- **Automatic lockfile detection:** Dependabot will figure out if you're using
-  Yarn or npm (or both, or neither) automatically. No need to tell it when you
-  get setup, or if you switch
+- **Automatic lockfile detection:** Dependabot will now figure out if you're
+  using Yarn or npm (or both, or neither) automatically. No need to tell us when
+  you get setup, or if you switch
 - **Yarn Workspaces support:** If you're working on a JavaScript monorepo then
   you might have heard of [Yarn Workspaces][yarn-workspaces]. Dependabot now
   supports them, so you can keep your entire monorepo up-to-date easily
