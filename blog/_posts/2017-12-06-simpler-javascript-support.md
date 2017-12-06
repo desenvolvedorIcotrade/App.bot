@@ -16,14 +16,11 @@ We've just made Dependabot much easier to use with JavaScript:
   you might have heard of [Yarn Workspaces][yarn-workspaces]. Dependabot now
   supports them, so you can keep your entire monorepo up-to-date easily
 
-We're also excited to announce that our 5,000th JavaScript PR was merged
-yesterday, so we must have been doing something right already.
+Our 5,000th JavaScript PR was merged yesterday, so we must be doing something
+right, but we won't stop until we think our JS support is perfect.
 
-We'll keep shipping updates to Dependabot's JavaScript support, and love hearing
-your feedback. If there's something you'd like to see Dependabot support,
-[let us know][feedback-link]!
-
-Enjoy!
+Got feedback for us on anything else we could do better?
+[Let us know!][feedback-link]
 
 🍸
 
