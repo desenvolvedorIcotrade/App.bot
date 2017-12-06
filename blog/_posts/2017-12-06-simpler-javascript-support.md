@@ -19,8 +19,7 @@ We've just made Dependabot much easier to use with JavaScript:
 Our 5,000th JavaScript PR was merged yesterday, so we must be doing something
 right, but we won't stop until we think our JS support is perfect.
 
-Got feedback for us on anything else we could do better?
-[Let us know!][feedback-link]
+Anything else we could do better? [Let us know!][feedback-link]
 
 🍸
 
