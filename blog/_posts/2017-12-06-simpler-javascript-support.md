@@ -5,6 +5,7 @@ date:   2017-12-06 09:00:00 +0000
 ---
 
 We've just made Dependabot much easier to use with JavaScript:
+
 - **No lockfile required:** You can now use Dependabot on JavaScript projects
   that don't have a lockfile. We'll bump the requirements in your `package.json`
   to ensure they always cover the latest version
