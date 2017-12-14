@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "New beta: Pipenv support"
+title:  "Dependabot now supports Pipenv (in beta)!"
 date:   2017-12-13 23:00:00 +0000
 ---
 
