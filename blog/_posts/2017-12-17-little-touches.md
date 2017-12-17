@@ -19,7 +19,7 @@ really proud of:
   [one customer][custom-labels-tweet] that they wanted to use their own label.
   Could we add a setting? No way! Dependabot can do better than that! We now
   ask if you'd like to use a new label for future PRs if/when you change the
-  label on a Dependabot PR.
+  label on a Dependabot PR [(here's a screenshot)][custom-labels-solution].
 
 We're always looking for other ways we can make Dependabot even better. Got a
 suggestion? [Let us know!][feedback-link]
@@ -30,4 +30,5 @@ suggestion? [Let us know!][feedback-link]
 [semantic-commit-messages]: https://seesparkbox.com/foundry/semantic_commit_messages
 [semantic-code]: https://github.com/dependabot/dependabot-core/commit/77bd3b823d740c65d3a89f1e7027a3ca4fbf09e9
 [custom-labels-tweet]: https://twitter.com/andrewfomera/status/940338532828286977
+[custom-labels-solution]: https://twitter.com/dependabot/status/940632100834865154
 [feedback-link]: https://github.com/dependabot/feedback
