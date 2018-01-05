@@ -11,9 +11,9 @@ Using Maven? Dependabot can now help you keep your POM file up-to-date.
 </p>
 
 Here's how it works:
-- Dependabot looks for a "pom.xml" in your repo, and pulls it down
+- Dependabot looks for a "pom.xml" in your repo, and pulls it down.
 - Dependabot extracts the dependencies from your POM file, and checks The
-  Central Repository for any available updates
+  Central Repository for any available updates.
 - If any updates are available, creates individual PRs for each dependency of
   your outdated dependencies.
 
