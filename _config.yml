@@ -16,7 +16,7 @@
 title: Dependabot
 #email: your-email@domain.com
 description: > # this means to ignore newlines until "baseurl:"
-  Dependabot makes keeping your Ruby, JavaScript, PHP and Python dependencies up to date
+  Dependabot makes keeping your Ruby, JavaScript, PHP, Python and Java dependencies up to date
   easy.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://dependabot.com"
