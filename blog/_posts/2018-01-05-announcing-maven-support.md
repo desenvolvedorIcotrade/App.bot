@@ -14,7 +14,7 @@ Here's how it works:
 - Dependabot looks for a "pom.xml" in your repo, and pulls it down.
 - Dependabot extracts the dependencies from your POM file, and checks The
   Central Repository for any available updates.
-- If any updates are available, creates individual PRs for each dependency of
+- If any updates are available, Dependabot creates individual PRs for each of
   your outdated dependencies.
 
 We wanted to launch Maven support as early as possible, so have released it
