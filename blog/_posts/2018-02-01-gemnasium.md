@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Gemnasium are being acquired by GitLab. Here's what that means for everyone else"
-date:   2018-01-17 10:00:00 +0100
+date:   2018-02-01 08:00:00 +0100
 ---
 
 Gemnasium has been acquired by GitLab and is shutting down its GitHub service in
