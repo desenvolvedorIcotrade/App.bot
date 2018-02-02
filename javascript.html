@@ -6,8 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700" rel="stylesheet">
   <link rel="stylesheet" href="css/main.css?v=1" />
-  <title>Dependabot for PHP</title>
-  <meta name="description" content="Automated dependency updates for PHP. Dependabot creates pull requests to keep your PHP dependencies up-to-date."/>
+  <title>Dependabot for JavaScript</title>
+  <meta name="description" content="Automated dependency updates for JavaScript. Dependabot creates pull requests to keep your JavaScript dependencies up-to-date."/>
 </head>
 
 <body>
@@ -32,10 +32,10 @@
       <div class="section hero">
         <div class="language-hero">
           <img src="/images/dependabot-logo-square.svg" alt="Dependabot" />
-          <img src="/images/icon-php.svg" alt="PHP" />
+          <img src="/images/icon-js.svg" alt="JavaScript" />
         </div>
-        <h2>Dependabot for PHP</h2>
-        <p>Dependabot creates pull requests to keep your PHP dependencies up-to-date.</p>
+        <h2>Dependabot for JavaScript</h2>
+        <p>Dependabot creates pull requests to keep your JavaScript dependencies up-to-date.</p>
       </div>
     </div>
 
@@ -43,26 +43,25 @@
       <div class="section">
         <a name="features"></a>
         <h2>Features</h2>
-        <p>Dependabot has supported PHP since June 2017. As well as Dependabot's <a href="/#features">core features</a> our PHP support has:</p>
+        <p>As well as Dependabot's <a href="/#features">core features</a> our JavaScript support has:</p>
         <div class="feature-boxes">
           <div class="feature-box">
             <div class="feature-description">
-              <h3>Version conflicts taken care of</h3>
-              <p>Dependabot considers resolvability when determining available version updates. Dependabot PRs will always resolve for your composer.json file.</p>
+              <h3>Yarn and npm5 lockfile support</h3>
+              <p>Dependabot works with lockfiles out of the box. It will automatically detect whether you're using Yarn or npm5 and keep the lockfile up-to-date.</p>
             </div>
           </div>
-
           <div class="feature-box">
             <div class="feature-description">
               <h3>Support for git sources and custom registries</h3>
-              <p>Dependabot can handle git sources and custom registries (like wpackagist), as well as updating packages from packagist.</p>
+              <p>Dependabot can handle git sources and custom registries, including those that require authentication. You name it, Dependabot supports it.</p>
             </div>
           </div>
 
           <div class="feature-box">
             <div class="feature-description">
-              <h3>Flexible monorepo support</h3>
-              <p>Using a monorepo? No problem - you can specify one or many directories within a repo for Dependabot to look for dependency files in.</p>
+              <h3>Monorepo support, including Yarn workspaces</h3>
+              <p>Using a monorepo? Dependabot will pick up all your JS dependency files automatically if you're using Yarn workspaces, or you can specify directories individually.</p>
             </div>
           </div>
 
