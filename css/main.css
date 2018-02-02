@@ -686,7 +686,7 @@ hr {
 .language-hero img {
   height: 100px;
   max-width: 45%;
-  margin-right: 20px; }
+  margin-right: 30px; }
 
 .language-hero img:last-child {
   margin-right: 0px; }
@@ -823,6 +823,9 @@ hr {
 
 .language-name {
   font-weight: 400; }
+
+a .language-name {
+  color: #636779; }
 
 .customers-bg .section {
   margin-bottom: 0;
