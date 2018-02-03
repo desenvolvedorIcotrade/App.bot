@@ -6,8 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700" rel="stylesheet">
   <link rel="stylesheet" href="css/main.css?v=1" />
-  <title>Dependabot for Java</title>
-  <meta name="description" content="Automated dependency updates for Java. Dependabot creates pull requests to keep your Java dependencies up-to-date."/>
+  <title>Dependabot for Git Submodules</title>
+  <meta name="description" content="Automated dependency updates for git submodules. Dependabot creates pull requests to keep your git submodules up-to-date."/>
 </head>
 
 <body>
@@ -32,10 +32,49 @@
       <div class="section hero">
         <div class="language-hero">
           <img src="/images/dependabot-logo-square.svg" alt="Dependabot" />
-          <img src="/images/icon-java.svg" alt="Java" />
+          <img src="/images/icon-git.svg" alt="Git Submodules" />
         </div>
-        <h2>Dependabot for Java</h2>
-        <p>Dependabot creates pull requests to keep your Java dependencies up-to-date.</p>
+        <h2>Dependabot for Git Submodules</h2>
+        <p>Dependabot creates pull requests to keep your git submodules up-to-date.</p>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="section how-it-works">
+        <a name="how-it-works"></a>
+        <h2>How it works</h2>
+        <div class="how-it-works-boxes">
+          <div class="how-it-works-box">
+            <div class="how-it-works-icon">
+              <span class="floating-number">1</span>
+              <img src="/images/icon-open-prs.svg" />
+            </div>
+            <div class="how-it-works-description">
+              <h3>Dependabot fetches your gitmodules file</h3>
+              <p>Every day, Dependabot pulls down your gitmodules file and the commit SHA for each submodule.</p>
+            </div>
+          </div>
+          <div class="how-it-works-box">
+            <div class="how-it-works-icon">
+              <span class="floating-number">2</span>
+              <img src="/images/icon-check-for-updates.svg" />
+            </div>
+            <div class="how-it-works-description">
+              <h3>Dependabot checks each submodule's commit</h3>
+              <p>For each submodule, Dependabot fetches the latest commit SHA for the specified branch.</p>
+            </div>
+          </div>
+          <div class="how-it-works-box">
+            <div class="how-it-works-icon">
+              <span class="floating-number">3</span>
+              <img src="/images/icon-review-and-merge.svg" />
+            </div>
+            <div class="how-it-works-description">
+              <h3>Dependabot creates PRs for outdated submodules</h3>
+              <p>If new commits exist for any of your submodules, Dependabot opens a PR with the new commit SHA.</p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
 
@@ -43,12 +82,12 @@
       <div class="section">
         <a name="features"></a>
         <h2>Features</h2>
-        <p>Java is one of Dependabot's newest languages. We're still rapidly improving it, but alongside Dependabot's <a href="/#features">core features</a> it already has:</p>
+        <p>Alongside Dependabot's <a href="/#features">core features</a>, out support for submodules has:</p>
         <div class="feature-boxes">
           <div class="feature-box">
             <div class="feature-description">
               <h3>Flexible monorepo support</h3>
-              <p>Using a monorepo? No problem - you can specify one or many directories within a repo for Dependabot to look for dependency files in.</p>
+              <p>Using a monorepo? No problem - you can specify one or many directories within a repo for Dependabot to look for gitmodules files in.</p>
             </div>
           </div>
 
