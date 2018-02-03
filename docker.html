@@ -6,8 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700" rel="stylesheet">
   <link rel="stylesheet" href="css/main.css?v=1" />
-  <title>Dependabot for Git Submodules</title>
-  <meta name="description" content="Automated dependency updates for git submodules. Dependabot creates pull requests to keep your git submodules up-to-date."/>
+  <title>Dependabot for Docker</title>
+  <meta name="description" content="Automated dependency updates for Docker. Dependabot creates pull requests to keep your Dockerfile up-to-date."/>
 </head>
 
 <body>
@@ -32,10 +32,10 @@
       <div class="section hero">
         <div class="language-hero">
           <img src="/images/dependabot-logo-square.svg" alt="Dependabot" />
-          <img src="/images/icon-git.svg" alt="Git Submodules" />
+          <img src="/images/icon-docker.svg" alt="Docker" />
         </div>
-        <h2>Dependabot for Git Submodules</h2>
-        <p>Dependabot creates pull requests to keep your git submodules up-to-date.</p>
+        <h2>Dependabot for Docker</h2>
+        <p>Dependabot creates pull requests to keep your Dockerfile up-to-date.</p>
       </div>
     </div>
 
@@ -50,8 +50,8 @@
               <img src="/images/icon-open-prs.svg" />
             </div>
             <div class="how-it-works-description">
-              <h3>Dependabot fetches your gitmodules file</h3>
-              <p>Every day, Dependabot pulls down your gitmodules file and the commit SHA for each submodule.</p>
+              <h3>Dependabot fetches your Dockerfile</h3>
+              <p>Every day, Dependabot pulls down your Dockerfile and identifies the base image it uses.</p>
             </div>
           </div>
           <div class="how-it-works-box">
@@ -60,8 +60,8 @@
               <img src="/images/icon-check-for-updates.svg" />
             </div>
             <div class="how-it-works-description">
-              <h3>Dependabot checks each submodule's commit</h3>
-              <p>For each submodule, Dependabot fetches the latest commit SHA for the specified branch.</p>
+              <h3>Dependabot checks the base image is up-to-date</h3>
+              <p>Dependabot checks Docker hub, or your private registry, for updates to your base image.</p>
             </div>
           </div>
           <div class="how-it-works-box">
@@ -70,8 +70,8 @@
               <img src="/images/icon-review-and-merge.svg" />
             </div>
             <div class="how-it-works-description">
-              <h3>Dependabot creates PRs for outdated submodules</h3>
-              <p>If new commits exist for any of your submodules, Dependabot opens a PR with the new commit SHA.</p>
+              <h3>Dependabot creates a PR if an update is available</h3>
+              <p>If an updated base image exist, Dependabot opens a PR to upgrade your Dockerfile to use it.</p>
             </div>
           </div>
         </div>
@@ -82,12 +82,12 @@
       <div class="section">
         <a name="features"></a>
         <h2>Features</h2>
-        <p>Alongside Dependabot's <a href="/#features">core features</a>, our support for submodules has:</p>
+        <p>Alongside Dependabot's <a href="/#features">core features</a>, our support for Docker has:</p>
         <div class="feature-boxes">
           <div class="feature-box">
             <div class="feature-description">
               <h3>Flexible monorepo support</h3>
-              <p>Using a monorepo? No problem - you can specify one or many directories within a repo for Dependabot to look for gitmodules files in.</p>
+              <p>Using a monorepo? No problem - you can specify one or many directories within a repo for Dependabot to look for Dockerfiles in.</p>
             </div>
           </div>
 
