@@ -9,24 +9,24 @@ GitHub email address, which caused Dependabot's commits to appear to be attached
 to their account. The issue is now resolved, cannot recur, and was only a
 display bug. A full post-mortem is below:
 
-- At 16:23 UTC an unknown GitHub user ([@0897726477][user]) set
-  `support@dependabot.com` as their GitHub email address. As the owner of the
-  email address, Dependabot was sent an email verification email from GitHub
+- At 16:23 UTC the GitHub user [@0897726477][user] set `support@dependabot.com`
+  as their GitHub email address. As the owner of the email address, Dependabot
+  was sent an email verification email from GitHub
 - At 16:37 UTC I read the email above and immediately forwarded it to GitHub
   support, informing them that no-one at Dependabot had signed up for GitHub
   with the support email address. Neither I nor anyone else clicked to confirm
   the email address
 - At 17:39 UTC a customer emailed Dependabot, informing us that Dependabot’s
-  commit icon was appearing as the unknown user's avatar, and that our commits
+  commit icon was appearing as the user's avatar, and that our commits
   were linking to that user's account
 - At 18:26 UTC I read the email above and realised GitHub’s commit author logic
   was being affected by the match with the (unverified) email address
 - At 18:28 UTC GitHub replied to my original email asking if I would like the
-  `support@dependabot.com` email address removed from the unknown account
+  `support@dependabot.com` email address removed from the user's account
 - At 18:31 UTC I replied to GitHub confirming that I would like the email
   address removed, and explained that Dependabot commits were currently linking
   to that account
-- At 19:09 UTC GitHub support removed the email address from the unknown
+- At 19:09 UTC GitHub support removed the email address from the user's
   account. I immediately registered a new account with the
   `support@dependabot.com` email address to safeguard it
 
