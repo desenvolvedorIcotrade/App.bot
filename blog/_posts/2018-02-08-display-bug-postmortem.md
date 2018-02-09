@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Postmortem: GitHub commit user display bug"
+title:  "Postmortem: GitHub commit display bug"
 date:   2018-02-08 08:00:00 +0100
 ---
 
