@@ -38,7 +38,12 @@ have been able to see any private Dependabot commits.
 Happily, after testing this myself and asking GitHub, I can confirm that the
 user would not have been able to see any private commits created by Dependabot.
 As a result, the scope of this incident is limited to having caused a display
-bug.
+bug. Here are some reassuring words from GitHub:
+
+> Apologies again for the worry and frustration this has caused both you and
+> your users. While 0897726477 was shown as the author of those commits,
+> absolutely no information about them or your repositories would have been
+> shared with that individual.
 
 To ensure this issue can't recur Dependabot will register GitHub accounts for
 any email addresses it uses. We also recommend that GitHub only use verified
