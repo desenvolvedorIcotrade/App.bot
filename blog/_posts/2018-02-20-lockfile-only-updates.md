@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "New feature: only lockfile updates option"
+title:  "New feature: option for lockfile updates only"
 date:   2018-02-20 10:00:00 +0000
 ---
 
