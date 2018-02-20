@@ -22,7 +22,7 @@ as an "advanced option" when adding Dependabot to a repo - if you need it, it's
 there for you.
 
 <p class="image-medium">
-  <img alt="Lockfile only updates" style="width: 480px; max-width: 480px;" src="/images/blog/lockfile-only-updates.png">
+  <img alt="Lockfile only updates" style="width: 480px; max-width: 480px;" src="/images/blog/only-lockfile-updates.png">
 </p>
 
 Happy dependency updating!
