@@ -4,7 +4,8 @@ title:  "New feature: only lockfile updates option"
 date:   2018-02-20 10:00:00 +0000
 ---
 
-We just shipped a new feature: an option to receive only lockfile updates. 🎉
+We just shipped a new feature: an option to only receive lockfile-only updates.
+🎉
 
 Many languages split dependency management into a manifest file and a lockfile.
 For these languages, Dependabot's creates PRs that update the requirement in the
