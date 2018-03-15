@@ -19,7 +19,7 @@ For Gemnasium's GitHub customers, the announcement is no doubt less positive,
 since the service will shut down in May. If you don't want to switch to GitLab
 then we'd love you to try Dependabot. Rather than provide you with a dashboard,
 we create dependency update pull requests for you automatically. We hope you'll
-love our service even more than you loved Gemnasium.
+love our service as much as you loved Gemnasium.
 
 Finally, for us, Gemnasium's [blog post][gemnasium-blog] is a warning of what
 can happen to businesses in a platform ecosystem. We believe Dependabot adds a
