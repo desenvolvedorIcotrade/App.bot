@@ -4,7 +4,7 @@ title:  "Better pull requests"
 date:   2018-03-14 10:00:00 +0000
 ---
 
-We've overhauled Dependabot's pull requests to include changelog, release note
+We've overhauled Dependabot's pull requests to include changelogs, release notes
 and commit details. Here's an [example][example-pr].
 
 <p class="image-medium">
