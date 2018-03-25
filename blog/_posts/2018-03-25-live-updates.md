@@ -11,7 +11,12 @@ We've just released a new dependency update schedule option: "live". If you
 select it (from the drop-down menu to the right of the "Bump now" button) you'll
 receive dependency update pull requests in real time.
 
-For now the "live" update schedule is only available for Ruby dependencies, but
-we'll be rolling it out for all other languages in the next few days.
+We're keeping Dependabot's default update schedule as "daily" because for most
+use cases we don't think you want dependency updates in the middle of the day.
+Live updates are there if you want them, though.
+
+**Note:** For now the "live" update schedule is only available for Ruby
+dependencies, but we'll be rolling it out for all other languages in the next
+few days.
 
 🍸
