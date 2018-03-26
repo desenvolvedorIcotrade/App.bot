@@ -15,8 +15,7 @@ We're keeping Dependabot's default update schedule as "daily" because for most
 use cases we don't think you want dependency updates in the middle of the day.
 Live updates are there if you want them, though.
 
-**Note:** For now the "live" update schedule is only available for Ruby, Python,
-PHP and Elixir dependencies. We'll be rolling it out for JavaScript in the next
-few days.
+**Note:** For now the "live" update schedule is not available for Docker, Java,
+or git submodule dependencies.
 
 🍸
