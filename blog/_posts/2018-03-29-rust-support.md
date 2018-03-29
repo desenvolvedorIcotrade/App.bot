@@ -29,5 +29,4 @@ have any suggestions, or if you experience any issues, please don't hesitate to
 
 📦
 
-[sign-up]: https://github.com/dependabot/feedback
 [feedback-link]: https://github.com/dependabot/feedback
