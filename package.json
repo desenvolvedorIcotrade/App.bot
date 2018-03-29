@@ -5,7 +5,7 @@
     "bulma": "^0.6.2",
     "gulp": "^3.9.1",
     "gulp-sass": "^3.2.1",
-    "normalize.css": "^7.0.0",
+    "normalize.css": "^8.0.0",
     "sass-module-importer": "^1.4.0"
   }
 }
