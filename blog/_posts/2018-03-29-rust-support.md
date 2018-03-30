@@ -20,8 +20,9 @@ Here's how it works:
   your outdated dependencies.
 
 We wanted to launch Rust support as early as possible, so have released it
-in beta. As such, we currently **don't** support Rust workspaces - we'll
-add support for them in the next couple of days, though.
+in beta. ~~As such, we currently **don't** support Rust workspaces - we'll
+add support for them in the next couple of days, though.~~ Update: Dependabot
+now support Rust workspaces, too.
 
 If you use Rust we'd love to hear from you as we test support for it. If you
 have any suggestions, or if you experience any issues, please don't hesitate to
