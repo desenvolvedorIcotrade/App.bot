@@ -36,3 +36,8 @@ ourselves. We'll also be adding an option to only receive security updates
 Stay safe out there!
 
 🍸
+
+**Update:** We've added Elixir to the list of languages we monitor security
+advisories for, and are hosting the advisory database [here][elixir-advisories].
+
+[elixir-advisories]: https://github.com/dependabot/elixir-security-advisories
