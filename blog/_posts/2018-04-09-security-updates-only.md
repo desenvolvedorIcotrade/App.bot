@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "New feature: option for security updates only"
-date:   2018-04-08 20:00:00 +0100
+title:  "Security updates only mode"
+date:   2018-04-09 07:00:00 +0100
 ---
 
 You can now set Dependabot to only create PRs in response to security
