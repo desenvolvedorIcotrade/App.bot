@@ -4,8 +4,8 @@ title:  "Automatic security updates for JavaScript"
 date:   2018-04-11 07:00:00 +0100
 ---
 
-Dependabot now creates pull requests in response to security vulnerabilities
-in Node packages. 🕵️‍♀️
+Dependabot now creates pull requests immediately in response to security
+advisories for Node packages. 🕵️‍♀️
 
 Here's how it works:
 - Dependabot polls [The Node Security Working Group's database][node-security-wg],
