@@ -40,4 +40,9 @@ Stay safe out there!
 **Update:** We've added Elixir to the list of languages we monitor security
 advisories for, and are hosting the advisory database [here][elixir-advisories].
 
+**Another update:** We've added JavaScript to the list of languages we monitor
+security advisories for, sourcing data from the
+[Node Security Working Group][node-security-working-group].
+
 [elixir-advisories]: https://github.com/dependabot/elixir-security-advisories
+[node-security-working-group]: https://github.com/nodejs/security-wg
