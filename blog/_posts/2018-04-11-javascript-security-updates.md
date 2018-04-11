@@ -7,9 +7,6 @@ date:   2018-04-11 07:00:00 +0100
 Dependabot now creates pull requests in response to security vulnerabilities
 in Node packages. 🕵️‍♀️
 
-We announced the same functionality for [Ruby, PHP and Rust][security-announcement]
-last week, and have also quietly added Elixir support in the meantime.
-
 Here's how it works:
 - Dependabot polls [The Node Security Working Group's database][node-security-wg],
   looking for new advisories
@@ -38,6 +35,9 @@ looking forward to doing more, and to supporting their work however we can.
 Stay safe out there!
 
 🍸
+
+PS: Using another language? We announced the same functionality for
+Ruby, PHP, Elixir and Rust [last week][security-announcement].
 
 [security-announcement]: automatically-respond-to-security-advisories
 [node-security-wg]: https://github.com/nodejs/security-wg
