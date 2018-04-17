@@ -10,7 +10,6 @@ Last month, the Hex.pm team announced they were going
 [live with organizations][hex-blog-post]. Now Dependabot can keep your private
 Elixir packages and organisations up-to-date, too.
 
-
 Here's how it works:
 - Dependabot will automatically detect if your repo uses any private packages
   during its first update run.
