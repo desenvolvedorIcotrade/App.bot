@@ -4,8 +4,7 @@ title:  "Support for multimodule Maven projects"
 date:   2018-04-21 18:00:00 +0000
 ---
 
-Dependabot can now help you keep multimodule Maven project dependencies
-up-to-date. 🎉
+Dependabot can now help you keep multimodule Maven projects up-to-date. 🎉
 
 We released alpha support for Maven back in January, and have been steadily
 improving Dependabot's handling of `pom.xml` files since.
