@@ -21,8 +21,14 @@ We still have some work to do to get Maven support to full release status, but
 it should already be useful. We'd love your [feedback][feedback-link] on it, and
 will be prioritising Maven improvements over the coming weeks.
 
+Finally, we're extremely grateful to [Even Holthe][evenh] for his
+[feedback][even-issue] and help making multimodule support in Dependabot
+possible. Thanks Even!
+
 Enjoy!
 
 🍸
 
 [feedback-link]: https://github.com/dependabot/feedback
+[evenh]: https://github.com/evenh
+[even-issue]: https://github.com/dependabot/dependabot-core/issues/222
