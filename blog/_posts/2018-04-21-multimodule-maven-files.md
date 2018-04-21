@@ -20,7 +20,7 @@ Last week we made some big improvements which we think are worth calling out.
 
 We still have some work to do to get Maven support to full release status, but
 it should already be useful. We'd love your [feedback][feedback-link] on it, and
-will be prioritizing Maven improvements over the coming weeks.
+will be prioritising Maven improvements over the coming weeks.
 
 Enjoy!
 
