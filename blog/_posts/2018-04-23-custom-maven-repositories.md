@@ -11,7 +11,7 @@ If you use a `settings.xml` file to specify your repositories and would like
 Dependabot to be able to update those dependencies, too, please
 [get in touch][get-in-touch].
 
-Oh, and Dependabot now supports [multimodule Maven projects][multimodule-projects]
+Oh, and Dependabot now [supports multimodule Maven projects][multimodule-projects]
 too.
 
 🎉
