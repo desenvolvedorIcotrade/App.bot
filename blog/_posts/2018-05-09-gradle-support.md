@@ -15,7 +15,7 @@ Here's how it works:
 - Dependabot looks for a "build.gradle" and (optionally) a "settings.gradle" in
   your repo, and pulls it down.
 - Dependabot extracts the dependencies from the top-level project and any
-  sub-projects, and checks against your repositiories to see if they're
+  sub-projects, and checks against your repositories to see if they're
   up-to-date.
 - If any updates are available, Dependabot creates individual PRs for each of
   your outdated dependencies.
