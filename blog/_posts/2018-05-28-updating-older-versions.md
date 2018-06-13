@@ -23,7 +23,8 @@ Dependabot will now create patch/minor update PRs for repos that are tied to an
 older major version.
 
 We've been rolling the above change out language-by-language, and the improved
-logic is now present for Ruby, JavaScript, PHP, Python, Elixir and Java. We hope
-to add it to our Rust support in the next few weeks.
+logic is now present for Ruby, JavaScript, PHP, Python, Elixir and Java.
+~We hope to add it to our Rust support in the next few weeks.~ Rust is now
+supported too, so all Dependabot's languages include this logic.
 
 🍸
