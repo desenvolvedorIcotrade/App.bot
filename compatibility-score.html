@@ -28,20 +28,31 @@
           </div>
         </div>
       </nav>
+    </div>
 
-      <div class="section hero">
-        <div class="compatibility-badge">
-          <img src="#" alt="Compatibility score badge" />
+    <div class="container">
+      <div class="section compatibility-score-container">
+
+        <h2><span class="page-title-prefix"></span><span class="repo-name"></span></h2>
+        <h3 class="subtitle-version"></h3>
+
+        <div class="compatibility-boxes">
+          <div class="compatibility-box compatibility-scores">
+          </div>
+
+          <div class="compatibility-box compatibility-blurb">
+            <p class="compatibility-blurb-placeholder"></p>
+            <p>Projects without CI, or without a previously passing test suite, are excluded from the scores. <span class="semver-score-caveat"></span></p>
+            <p>Dependabot creates pull requests for thousands of organisations to help them keep their dependencies up to date.</p>
+          </div>
         </div>
-        <h2>Rely on everyone else's test suites</h2>
-        <p>Dependabot aggregates everyone's test suite results to check a dependency update is backwards compatible.</p>
       </div>
     </div>
 
     <div class="container">
       <div class="section how-it-works">
         <a name="how-it-works"></a>
-        <h2>How it's calculated</h2>
+        <h2>How the compatibility score is calculated</h2>
         <div class="how-it-works-boxes">
           <div class="how-it-works-box">
             <div class="how-it-works-icon">
@@ -70,63 +81,7 @@
             </div>
             <div class="how-it-works-description">
               <h3>We show you the pass rate</h3>
-              <p>Our compatibility score is the % of CI runs that passed when updating from your current version to the new one.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="container">
-      <div class="section statuses">
-        <a name="statuses"></a>
-        <h2>The statuses</h2>
-        <div class="statuses-table">
-          <div class="status-row">
-            <div class="status">
-              <img src="https://api.dependabot.com/badges/ci_status?dependency-name=pg&package-manager=bundler&previous-version=0.20.0&new-version=0.21.0" alt="Compatibility score badge" /></div>
-            <div class="status-details">
-              <p>The update passed CI checks on X% of repos. Repos without CI, or without a previously passing test suite, are excluded, as are test runs that are still pending.</p>
-            </div>
-          </div>
-          <div class="status-row">
-            <div class="status">
-              <img src="https://api.dependabot.com/badges/ci_status?dependency-name=pg&package-manager=bundler&previous-version=0.20.0&new-version=unknown" alt="Compatibility score badge" />
-            </div>
-            <div class="status-details">
-              <p>The update was not made to enough repositories for Dependabot to form a view on compatibility. Help us fix that by introducing more people to Dependabot!</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="container">
-      <div class="section">
-        <a name="features"></a>
-        <h2>How it can help you</h2>
-        <div class="feature-boxes">
-          <div class="feature-box">
-            <div class="feature-icon">
-              <img src="/images/icon-code.svg" />
-            </div>
-            <div class="feature-description">
-              <h3>Check backwards compatibility</h3>
-              <p>
-                Not all dependency authors use semantic versioning. Not all dependencies are post v1.0.0. When you can't rely on SemVer, checking everyone's tests pass is the next best thing.
-              </p>
-            </div>
-          </div>
-
-          <div class="feature-box">
-            <div class="feature-icon">
-              <img src="/images/icon-tick.svg" />
-            </div>
-            <div class="feature-description">
-              <h3>Avoid buggy releases</h3>
-              <p>
-                Despite everyone's best intentions, bugs sometimes creep into new releases. When you know that everyone's tests pass, however, you can be relatively sure an update is bug-free.
-              </p>
+              <p>The compatibility score is the percentage of CI runs that passed when updating between relevant versions.</p>
             </div>
           </div>
         </div>
@@ -147,7 +102,9 @@
     </div>
   </div>
 
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.10/lodash.min.js"></script>
+
   <script>
     var nav = $(".nav");
     $(".nav-toggle").click(function () {
@@ -158,6 +115,7 @@
       nav.removeClass("menu-open");
     });
   </script>
+
   <script>
     function getUrlParameter(sParam) {
       var sPageURL = decodeURIComponent(window.location.search.substring(1)),
@@ -174,7 +132,160 @@
       }
     };
 
-    $('.compatibility-badge img').attr("src", `https://api.dependabot.com/badges/ci_status?dependency-name=${getUrlParameter('dependency-name') || 'pg'}&package-manager=${getUrlParameter('package-manager') || 'bundler'}&previous-version=${getUrlParameter('previous-version') || '0.20.0'}&new-version=${getUrlParameter('new-version') || '0.21.0'}`);
+    function fetchSemVerData(dependencyName, packageManager) {
+      return $.get({
+        url: "https://api.dependabot.com/compatibility_scores",
+        data: {
+          "dependency-name": dependencyName,
+          "package-manager": packageManager,
+        },
+      })
+    }
+
+    function semverScore(total, successful) {
+      return Math.round(100.0 * successful / total);
+    }
+
+    function compatibilityBadgeUrl(dependencyName, packageManager, previousVersion, newVersion) {
+      // If we're not supplying versions, get a badge for the entire dependency history
+      // Otherwise, get a badge for just the version bump we care about
+      if (previousVersion && newVersion) {
+        return `https://api.dependabot.com/badges/compatibility_score?dependency-name=${dependencyName}&package-manager=${packageManager}&previous-version=${previousVersion}&new-version=${newVersion}`
+      } else {
+        return `https://api.dependabot.com/badges/compatibility_score?dependency-name=${dependencyName}&package-manager=${packageManager}&version-scheme=semver`
+      }
+    }
+
+    function buildCompatibilityScoreElement(dependencyName, packageManager, previousVersion, newVersion, versionString) {
+      var newScore = $("<div class='compatibility-score'></div>");
+      var newScoreBadge = $("<div class='compatibility-score-badge'></div>");
+      var newScoreBadgeImg = $("<img/>");
+      newScoreBadgeImg.attr("src", compatibilityBadgeUrl(dependencyName, packageManager, previousVersion, newVersion));
+      newScoreBadge.append(newScoreBadgeImg);
+      newScore.append(newScoreBadge)
+
+      var newScoreFooter = $("<div class='compatibility-score-footer'></div>");
+      var newScoreVersion = $("<div class='compatibility-score-version'></div>");
+      if (versionString == null) {
+        var allUrl = `${window.location.href.split('?')[0]}?dependency-name=${dependencyName}&package-manager=${packageManager}`
+        newScoreVersion.append($(`<a href=${allUrl}>See scores for all releases of ${dependencyName}</a>`));
+      } else {
+        newScoreVersion.text(versionString);
+      }
+      newScoreFooter.append(newScoreVersion);
+      newScore.append(newScoreFooter);
+
+      return newScore;
+    }
+
+    // For now, we just support two cases, either we're doing a specific update
+    // from VX to Vy, or we're looking at a dependency irrespective of version.
+    //
+    // In either case, if we don't have enough data then just provide the 'unknown' UI.
+    //
+    // TODO: de-dupe the magic `< 5` condition (which is also defined in the backend) by
+    // exposing something to indicate this in the API?
+    function render(dependencyName, packageManager, previousVersion, newVersion, data) {
+      $(".repo-name").text(dependencyName);
+
+      if (previousVersion && newVersion) {
+        $(".page-title-prefix").text('Compatibility score for ');
+        $(".subtitle-version").text(`${previousVersion} ... ${newVersion}`);
+        $('.compatibility-scores').append(
+          buildCompatibilityScoreElement(dependencyName, packageManager, previousVersion, newVersion, null).addClass("primary")
+        )
+
+        var update = _.find(data.updates, { previous_version: previousVersion, updated_version: newVersion });
+        if (!update || update.candidate_updates < 5) {
+          $(".compatibility-blurb-placeholder").append(`Dependabot hasn't made enough updates for projects migrating <strong>${dependencyName}</strong> from <strong>${previousVersion}</strong> to <strong>${ newVersion }</strong> to form a view on compatibility yet.`)
+        } else {
+          $(".compatibility-blurb-placeholder").append(`Dependabot has performed <strong>${ update.candidate_updates }</strong> updates of <strong>${ dependencyName }</strong> from <strong>${ previousVersion }</strong> to <strong>${ newVersion }</strong> and <strong>${ semverScore(update.candidate_updates, update.successful_updates) }%</strong> of those updates passed CI.`)
+        }
+      } else {
+        $(".page-title-prefix").text('SemVer compatibility score for ');
+        $(".semver-score-caveat").text('SemVer incompatible updates are excluded from the overall SemVer score.');
+
+        if (data.total_semver_compatible_updates < 5) {
+          $(".compatibility-blurb-placeholder").append(`Dependabot hasn't made enough SemVer compatible updates for <strong>${dependencyName}</strong> to form a view on its compatibility yet.`)
+        } else {
+          $(".compatibility-blurb-placeholder").append(`Dependabot has performed <strong>${ data.total_semver_compatible_updates }</strong> updates of <strong>${ dependencyName }</strong> between SemVer compatible versions, and <strong>${ semverScore(data["total_semver_compatible_updates"], data["successful_semver_compatible_updates"]) }%</strong> of those updates passed CI.`)
+        }
+
+        $('.compatibility-scores').append(
+          buildCompatibilityScoreElement(dependencyName, packageManager, null, null, "All releases").addClass("primary")
+        )
+
+        function renderUpdates(updates) {
+          var mostRecentUpdates = _.takeRight(updates, 3);
+
+          _.each(_.reverse(mostRecentUpdates), function(update) {
+            $('.compatibility-scores').append(
+              buildCompatibilityScoreElement(
+                dependencyName,
+                packageManager,
+                update.previous_version,
+                update.updated_version,
+                update.previous_version + " → " + update.updated_version
+              )
+            )
+          })
+
+          if (updates.length > 3) {
+            var seeMoreLink = $("<span class='compatibility-scores-more-link'>... see more</span>")
+            seeMoreLink.click(function() {
+              seeMoreLink.remove();
+              renderUpdates(_.dropRight(updates, 3))
+            })
+
+            $('.compatibility-scores').append(seeMoreLink)
+          }
+        }
+
+        renderUpdates(data["updates"])
+      }
+    }
+
+    var params = {
+      dependencyName: getUrlParameter("dependency-name"),
+      packageManager: getUrlParameter("package-manager"),
+      previousVersion: getUrlParameter("previous-version"),
+      newVersion: getUrlParameter("new-version")
+    }
+
+    // If we're hitting the page with no expectations, let's show the semver
+    // compatibility for a common dependency
+    if (!params.previousVersion && !params.newVersion && !params.dependencyName && !params.packageManager) {
+      var popularDependencies = [
+        ["uglifier", "bundler"],
+        ["sinatra", "bundler"],
+        ["rubocop", "bundler"],
+        ["rails", "bundler"],
+        ["puma", "bundler"],
+        ["webpack", "npm_and_yarn"],
+        ["eslint", "npm_and_yarn"],
+        ["react", "npm_and_yarn"],
+        ["jest", "npm_and_yarn"],
+        ["django", "pip"],
+        ["pytest", "pip"],
+        ["boto3", "pip"]
+      ]
+      var dep = popularDependencies[Math.floor(Math.random() * popularDependencies.length)];
+      params.dependencyName = dep[0]
+      params.packageManager = dep[1]
+    }
+
+    fetchSemVerData(
+      params.dependencyName,
+      params.packageManager,
+    ).then(data => {
+      render(
+        params.dependencyName,
+        params.packageManager,
+        params.previousVersion,
+        params.newVersion,
+        data,
+      )
+    })
   </script>
   <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

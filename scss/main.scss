@@ -144,6 +144,98 @@
   max-width: 90%;
 }
 
+.compatibility-score-container .repo-name {
+  text-decoration: underline;
+  font-style: italic;
+  font-weight: 800;
+}
+
+.compatibility-score-container {
+}
+
+.compatibility-score-container h2 {
+  margin-bottom: 0.5rem;
+}
+
+.compatibility-score-container h3 {
+  margin-top: 0.7rem;
+  margin-bottom: 3rem;
+  color: #9E9E9E;
+  font-weight: 600;
+}
+
+.compatibility-boxes {
+  display: flex;
+  flex-direction: row;
+}
+
+.compatibility-box {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.compatibility-blurb {
+  text-align: left;
+}
+
+.compatibility-blurb strong {
+  font-weight: 700;
+}
+
+.compatibility-blurb p:first-of-type {
+  margin-top: 0;
+}
+
+.compatibility-scores {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  padding-right: 30px;
+  @media only screen and (min-width: 768px) {
+    padding-right: 100px;
+  }
+}
+
+.compatibility-score {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.compatibility-score:first-of-type {
+  margin-top: 0;
+}
+
+.compatibility-score-badge {
+  align-self: flex-end;
+}
+
+.compatibility-score.primary .compatibility-score-badge {
+  align-self: stretch;
+}
+
+.compatibility-score .compatibility-score-badge img {
+  width: 100%;
+}
+
+.compatibility-score-footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  line-height: 0.9em;
+  font-size: 0.8em;
+  font-weight: 400;
+}
+
+.compatibility-scores-more-link {
+  text-align: right;
+  cursor: pointer;
+  color: #0025ff;
+  margin-top: 0.6rem;
+  font-size: 0.8rem;
+}
+
 .language-hero img {
   height: 100px;
   max-width: 45%;
