@@ -167,7 +167,7 @@
       var newScoreFooter = $("<div class='compatibility-score-footer'></div>");
       var newScoreVersion = $("<div class='compatibility-score-version'></div>");
       if (versionString == null) {
-        var allUrl = `${window.location.href.split('?')[0]}?dependency-name=${dependencyName}&package-manager=${packageManager}`
+        var allUrl = `${window.location.href.split('?')[0]}?dependency-name=${dependencyName}&package-manager=${packageManager}&version-scheme=semver`
         newScoreVersion.append($(`<a href=${allUrl}>See scores for all releases of ${dependencyName}</a>`));
       } else {
         newScoreVersion.text(versionString);
