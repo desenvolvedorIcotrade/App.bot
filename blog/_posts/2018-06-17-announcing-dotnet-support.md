@@ -30,9 +30,14 @@ already aware that:
 - Dependabot doesn't yet support packages.config files. Again, we'll have
   support for them very soon.
 
+We're grateful to [Raul Hidalgo Caballero][raul] and [Asbjørn Ulsberg][asbjorn]
+for their advice on .NET. Thanks guys!
+
 If you have any suggestions, or if you experience any issues, please don't
 hesitate to [let us know][feedback-link]!
 
 ✌️
 
+[raul]: https://github.com/deinok
+[asbjorn]: https://github.com/asbjornu
 [feedback-link]: https://github.com/dependabot/feedback
