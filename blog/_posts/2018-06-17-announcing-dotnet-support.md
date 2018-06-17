@@ -12,8 +12,8 @@ project files up-to-date.
 </p>
 
 Here's how it works:
-- Dependabot looks for a "*.csproj", "*.fsproj" or "*.vbproj" in your repo, and
-  pulls it down.
+- Dependabot looks for a "\*.csproj", "\*.fsproj" or "\*.vbproj" in your repo,
+  and pulls it down.
 - Dependabot extracts the dependencies from the project file and checks against
   the central NuGet repository to see if they're up-to-date.
 - If any updates are available, Dependabot creates individual PRs for each of
