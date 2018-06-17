@@ -160,9 +160,23 @@
       }
     }
 
-    function buildCompatibilityScoreElement(dependencyName, packageManager, previousVersion, newVersion, versionString) {
+    function compatibilityScoreUrl(dependencyName, packageManager, previousVersion, newVersion) {
+      return `${window.location.href.split('?')[0]}?dependency-name=${dependencyName}&package-manager=${packageManager}&previous-version=${previousVersion}&new-version=${newVersion}`
+    }
+
+    function buildCompatibilityScoreElement(dependencyName, packageManager, previousVersion, newVersion, versionString, enableLink = false) {
       var newScore = $("<div class='compatibility-score'></div>");
-      var newScoreBadge = $("<div class='compatibility-score-badge'></div>");
+
+      var newScoreBadge;
+      if (enableLink) {
+        newScoreBadge = $("<a class='compatibility-score-badge'></a>").attr(
+          "href",
+          compatibilityScoreUrl(dependencyName, packageManager, previousVersion, newVersion)
+        )
+      } else {
+        newScoreBadge = $("<div class='compatibility-score-badge'></div>");
+      }
+
       var newScoreBadgeImg = $("<img/>");
       newScoreBadgeImg.attr("src", compatibilityBadgeUrl(dependencyName, packageManager, previousVersion, newVersion));
       newScoreBadge.append(newScoreBadgeImg);
@@ -229,7 +243,8 @@
                 packageManager,
                 update.previous_version,
                 update.updated_version,
-                update.previous_version + " → " + update.updated_version
+                update.previous_version + " → " + update.updated_version,
+                true
               )
             )
           })
