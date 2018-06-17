@@ -33,6 +33,6 @@ already aware that:
 If you have any suggestions, or if you experience any issues, please don't
 hesitate to [let us know][feedback-link]!
 
-🐘
+✌️
 
 [feedback-link]: https://github.com/dependabot/feedback
