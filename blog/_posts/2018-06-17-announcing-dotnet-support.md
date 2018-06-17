@@ -12,7 +12,7 @@ project files up-to-date.
 </p>
 
 Here's how it works:
-- Dependabot looks for a "\*.csproj", "\*.fsproj" or "\*.vbproj" in your repo,
+- Dependabot looks for a \*.csproj, \*.fsproj or \*.vbproj in your repo,
   and pulls it down.
 - Dependabot extracts the dependencies from the project file and checks against
   the central NuGet repository to see if they're up-to-date.
@@ -27,7 +27,7 @@ If you use .NET we'd love to hear from you as we test support for it. We're
 already aware that:
 - Dependabot doesn't yet support custom repositories. We'll be adding support
   for them soon.
-- Dependabot doesn't yet support "packages.config" setups. Again, we'll have
+- Dependabot doesn't yet support packages.config files. Again, we'll have
   support for them very soon.
 
 If you have any suggestions, or if you experience any issues, please don't
