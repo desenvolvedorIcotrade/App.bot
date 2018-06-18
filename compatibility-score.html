@@ -227,7 +227,7 @@
         if (data.total_semver_compatible_updates < 5) {
           $(".compatibility-blurb-placeholder").append(`Dependabot hasn't made enough SemVer compatible updates for <strong>${dependencyName}</strong> to form a view on its compatibility yet.`)
         } else {
-          $(".compatibility-blurb-placeholder").append(`Dependabot has updated <strong>${ dependencyName }</strong> between SemVer compatible versions <strong>${ data.total_semver_compatible_updates }</strong> times across <strong>${ data.total_projects_with_semver_compatible_updates }</strong> projects. <strong>${ semverScore(data["total_semver_compatible_updates"], data["successful_semver_compatible_updates"]) }%</strong> of those updates passed CI.`)
+          $(".compatibility-blurb-placeholder").append(`Dependabot has updated <strong>${ dependencyName }</strong> between SemVer compatible versions <strong>${ data.total_semver_compatible_updates }</strong> times across <strong>${ data.total_projects_with_semver_compatible_updates }</strong> projects.<br /><strong>${ semverScore(data["total_semver_compatible_updates"], data["successful_semver_compatible_updates"]) }%</strong> of those updates passed CI.`)
         }
 
         $('.compatibility-scores').append(
