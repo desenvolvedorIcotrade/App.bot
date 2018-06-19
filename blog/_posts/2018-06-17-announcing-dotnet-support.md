@@ -27,8 +27,8 @@ If you use .NET we'd love to hear from you as we test support for it. We're
 already aware that:
 - ~~Dependabot doesn't yet support custom repositories. We'll be adding support
   for them soon.~~ We now fully support custom repositories. 🎉
-- Dependabot doesn't yet support packages.config files. Again, we'll have
-  support for them very soon.
+- ~~Dependabot doesn't yet support packages.config files. Again, we'll have
+  support for them very soon.~~ We now support packages.config files. 🎉
 
 We're grateful to [Raul Hidalgo Caballero][raul] and [Asbjørn Ulsberg][asbjorn]
 for their advice on .NET. Thanks guys!
