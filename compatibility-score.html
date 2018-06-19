@@ -218,7 +218,7 @@
         if (!update || update.candidate_updates < 5) {
           $(".compatibility-blurb-placeholder").append(`Dependabot hasn't made enough updates for projects migrating <strong>${dependencyName}</strong> from <strong>${previousVersion}</strong> to <strong>${ newVersion }</strong> to form a view on compatibility yet.`)
         } else {
-          $(".compatibility-blurb-placeholder").append(`Dependabot has updated <strong>${ dependencyName }</strong> from <strong>${ previousVersion }</strong> to <strong>${ newVersion }</strong> in <strong>${ update.candidate_updates }</strong> projects. <strong>${ semverScore(update.candidate_updates, update.successful_updates) }%</strong> of those updates passed CI.`)
+          $(".compatibility-blurb-placeholder").append(`Dependabot has updated <strong>${ dependencyName }</strong> from <strong>${ previousVersion }</strong> to <strong>${ newVersion }</strong> in <strong>${ update.candidate_updates }</strong> projects so far. <strong>${ semverScore(update.candidate_updates, update.successful_updates) }%</strong> of those updates passed CI.`)
         }
       } else {
         $(".page-title-prefix").text('SemVer compatibility score for ');
@@ -227,7 +227,7 @@
         if (data.total_semver_compatible_updates < 5) {
           $(".compatibility-blurb-placeholder").append(`Dependabot hasn't made enough SemVer compatible updates for <strong>${dependencyName}</strong> to form a view on its compatibility yet.`)
         } else {
-          $(".compatibility-blurb-placeholder").append(`Dependabot has updated <strong>${ dependencyName }</strong> between SemVer compatible versions <strong>${ data.total_semver_compatible_updates }</strong> times across <strong>${ data.total_projects_with_semver_compatible_updates }</strong> projects.<br /><strong>${ semverScore(data["total_semver_compatible_updates"], data["successful_semver_compatible_updates"]) }%</strong> of those updates passed CI.`)
+          $(".compatibility-blurb-placeholder").append(`Dependabot has updated <strong>${ dependencyName }</strong> between SemVer compatible versions <strong>${ data.total_semver_compatible_updates }</strong> times across <strong>${ data.total_projects_with_semver_compatible_updates }</strong> projects so far.<br /><strong>${ semverScore(data["total_semver_compatible_updates"], data["successful_semver_compatible_updates"]) }%</strong> of those updates passed CI.`)
         }
 
         $('.compatibility-scores').append(
