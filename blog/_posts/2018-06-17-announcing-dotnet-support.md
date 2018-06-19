@@ -26,8 +26,7 @@ your feedback to make it perfect.
 If you use .NET we'd love to hear from you as we test support for it. We're
 already aware that:
 - ~~Dependabot doesn't yet support custom repositories. We'll be adding support
-  for them soon.~~ We now support custom repositories. Private repositories
-  (i.e., custom repositories which require authentication) are still WIP.
+  for them soon.~~ We now fully support custom repositories. 🎉
 - Dependabot doesn't yet support packages.config files. Again, we'll have
   support for them very soon.
 
