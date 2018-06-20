@@ -228,6 +228,11 @@
       } else if (newVersion) {
         // 2) we're looking at a dependency's SemVer score updating to a specific version
         $(".page-title-prefix").text('SemVer stability score for ');
+
+        if (newVersion === 'latest') {
+          newVersion = data.latest_version
+        }
+
         $(".subtitle-version").text(`${newVersion}`);
         $('.compatibility-scores').append(
           buildCompatibilityScoreElement(dependencyName, packageManager, newVersion, null, null).addClass("primary")
