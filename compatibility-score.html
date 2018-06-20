@@ -221,7 +221,7 @@
           $(".compatibility-blurb-placeholder").append(`Dependabot has updated <strong>${ dependencyName }</strong> from <strong>${ previousVersion }</strong> to <strong>${ newVersion }</strong> in <strong>${ update.candidate_updates }</strong> projects so far. <strong>${ semverScore(update.candidate_updates, update.successful_updates) }%</strong> of those updates passed CI.`)
         }
       } else {
-        $(".page-title-prefix").text('SemVer compatibility score for ');
+        $(".page-title-prefix").text('SemVer stability score for ');
         $(".semver-score-caveat").text('SemVer incompatible updates are excluded from the overall SemVer score.');
 
         if (data.total_semver_compatible_updates < 5) {
