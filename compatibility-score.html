@@ -151,35 +151,37 @@
       return Math.round(100.0 * successful / total);
     }
 
-    function compatibilityBadgeUrl(dependencyName, packageManager, previousVersion, newVersion) {
+    function compatibilityBadgeUrl(dependencyName, packageManager, newVersion, previousVersion) {
       // If we're not supplying versions, get a badge for the entire dependency history
       // Otherwise, get a badge for just the version bump we care about
       if (previousVersion && newVersion) {
         return `https://api.dependabot.com/badges/compatibility_score?dependency-name=${dependencyName}&package-manager=${packageManager}&previous-version=${previousVersion}&new-version=${newVersion}`
+      } else if (newVersion) {
+        return `https://api.dependabot.com/badges/compatibility_score?dependency-name=${dependencyName}&package-manager=${packageManager}&version-scheme=semver&target-version=${newVersion}`
       } else {
         return `https://api.dependabot.com/badges/compatibility_score?dependency-name=${dependencyName}&package-manager=${packageManager}&version-scheme=semver`
       }
     }
 
-    function compatibilityScoreUrl(dependencyName, packageManager, previousVersion, newVersion) {
+    function compatibilityScoreUrl(dependencyName, packageManager, newVersion, previousVersion) {
       return `${window.location.href.split('?')[0]}?dependency-name=${dependencyName}&package-manager=${packageManager}&previous-version=${previousVersion}&new-version=${newVersion}`
     }
 
-    function buildCompatibilityScoreElement(dependencyName, packageManager, previousVersion, newVersion, versionString, enableLink = false) {
+    function buildCompatibilityScoreElement(dependencyName, packageManager, newVersion, previousVersion, versionString, enableLink = false) {
       var newScore = $("<div class='compatibility-score'></div>");
 
       var newScoreBadge;
       if (enableLink) {
         newScoreBadge = $("<a class='compatibility-score-badge'></a>").attr(
           "href",
-          compatibilityScoreUrl(dependencyName, packageManager, previousVersion, newVersion)
+          compatibilityScoreUrl(dependencyName, packageManager, newVersion, previousVersion)
         )
       } else {
         newScoreBadge = $("<div class='compatibility-score-badge'></div>");
       }
 
       var newScoreBadgeImg = $("<img/>");
-      newScoreBadgeImg.attr("src", compatibilityBadgeUrl(dependencyName, packageManager, previousVersion, newVersion));
+      newScoreBadgeImg.attr("src", compatibilityBadgeUrl(dependencyName, packageManager, newVersion, previousVersion));
       newScoreBadge.append(newScoreBadgeImg);
       newScore.append(newScoreBadge)
 
@@ -197,21 +199,24 @@
       return newScore;
     }
 
-    // For now, we just support two cases, either we're doing a specific update
-    // from VX to Vy, or we're looking at a dependency irrespective of version.
+    // We support three cases:
+    // 1) we're doing a specific update from VX to Vy
+    // 2) we're looking at a dependency's SemVer score updating to a specific version
+    // 3) we're looking at a dependency's SemVer score across all updates
     //
-    // In either case, if we don't have enough data then just provide the 'unknown' UI.
+    // If we ever don't have enough data then just provide the 'unknown' UI.
     //
     // TODO: de-dupe the magic `< 5` condition (which is also defined in the backend) by
     // exposing something to indicate this in the API?
-    function render(dependencyName, packageManager, previousVersion, newVersion, data) {
+    function render(dependencyName, packageManager, newVersion, previousVersion, data) {
       $(".repo-name").text(dependencyName);
 
       if (previousVersion && newVersion) {
+        // 1) we're doing a specific update from VX to Vy
         $(".page-title-prefix").text('Compatibility score for ');
         $(".subtitle-version").text(`${previousVersion} ... ${newVersion}`);
         $('.compatibility-scores').append(
-          buildCompatibilityScoreElement(dependencyName, packageManager, previousVersion, newVersion, null).addClass("primary")
+          buildCompatibilityScoreElement(dependencyName, packageManager, newVersion, previousVersion, null).addClass("primary")
         )
 
         var update = _.find(data.updates, { previous_version: previousVersion, updated_version: newVersion });
@@ -220,7 +225,22 @@
         } else {
           $(".compatibility-blurb-placeholder").append(`Dependabot has updated <strong>${ dependencyName }</strong> from <strong>${ previousVersion }</strong> to <strong>${ newVersion }</strong> in <strong>${ update.candidate_updates }</strong> projects so far. <strong>${ semverScore(update.candidate_updates, update.successful_updates) }%</strong> of those updates passed CI.`)
         }
+      } else if (newVersion) {
+        // 2) we're looking at a dependency's SemVer score updating to a specific version
+        $(".page-title-prefix").text('SemVer stability score for ');
+        $(".subtitle-version").text(`${newVersion}`);
+        $('.compatibility-scores').append(
+          buildCompatibilityScoreElement(dependencyName, packageManager, newVersion, null, null).addClass("primary")
+        )
+
+        var update = _.find(data.semver_updates, { updated_version: newVersion });
+        if (!update || update.candidate_updates < 5) {
+          $(".compatibility-blurb-placeholder").append(`Dependabot hasn't made enough SemVer compatible updates for projects migrating <strong>${dependencyName}</strong> to <strong>${ newVersion }</strong> to form a view on compatibility yet.`)
+        } else {
+          $(".compatibility-blurb-placeholder").append(`Dependabot has updated <strong>${ dependencyName }</strong> to <strong>${ newVersion }</strong> from a SemVer compatible version <strong>${ update.candidate_updates }</strong> times so far.<br /><strong>${ semverScore(update.candidate_updates, update.successful_updates) }%</strong> of those updates passed CI.`)
+        }
       } else {
+        // 3) we're looking at a dependency's SemVer score across all updates
         $(".page-title-prefix").text('SemVer stability score for ');
         $(".semver-score-caveat").text('SemVer incompatible updates are excluded from the overall SemVer score.');
 
@@ -242,8 +262,8 @@
               buildCompatibilityScoreElement(
                 dependencyName,
                 packageManager,
-                update.previous_version,
                 update.updated_version,
+                update.previous_version,
                 update.previous_version + " → " + update.updated_version,
                 true
               )
@@ -269,7 +289,8 @@
       dependencyName: getUrlParameter("dependency-name"),
       packageManager: getUrlParameter("package-manager"),
       previousVersion: getUrlParameter("previous-version"),
-      newVersion: getUrlParameter("new-version")
+      newVersion: getUrlParameter("new-version"),
+      targetVersion: getUrlParameter("target-version")
     }
 
     // If we're hitting the page with no expectations, let's show the semver
@@ -301,8 +322,8 @@
       render(
         params.dependencyName,
         params.packageManager,
-        params.previousVersion,
         params.newVersion,
+        params.previousVersion,
         data,
       )
     })
