@@ -10,7 +10,7 @@ from 3.12.0 to 3.13.0.
 
 💯🎉💯🎉💯🎉💯🎉💯🎉
 
-It's been quite a ride getting here! Here are some other Dependabot numbers:
+Here are some other Dependabot numbers we're pretty proud of:
 - 5,406 repos are configured to receive PRs from Dependabot
 - 5,146 Dependabot PRs merged last week
 - 1,556 accounts use Dependabot
