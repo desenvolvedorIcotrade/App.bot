@@ -4,9 +4,9 @@ title:  "100,000 pull requests merged! 💯🎉"
 date:   2018-06-27 09:00:00 +0100
 ---
 
-Early this morning Dependabot's 100,000th dependency update pull request was
-merged. It was to a private repo and updated the Ruby gem `selenium-webdriver`
-from 3.12.0 to 3.13.0.
+Early this morning Dependabot's 100,000th pull request was merged. It was to a
+private repo and updated the Ruby gem `selenium-webdriver` from 3.12.0 to
+3.13.0.
 
 💯🎉💯🎉💯🎉💯🎉💯🎉
 
