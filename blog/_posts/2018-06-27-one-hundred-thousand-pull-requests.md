@@ -12,12 +12,12 @@ private repo and updated the Ruby gem `selenium-webdriver` from 3.12.0 to
 
 Here are some other Dependabot numbers we're pretty proud of:
 - 5,406 repos are configured to receive PRs from Dependabot
-- 5,146 Dependabot PRs merged last week
+- 5,146 Dependabot PRs were merged last week
 - 1,556 accounts use Dependabot
-- 85% of accounts receive Dependabot completely free
+- 85% of those accounts get Dependabot completely free
 - 8 languages are supported (Ruby, Python, JS, PHP, Java, .NET, Elixir and Rust)
-- 8,926 commits across Dependabot's four services (automatically updating code
-  is hard, even when it's just dependency files!)
+- 8,926 commits have been made to Dependabot's four services (because it turns
+  out automatically writing code is hard, even when it's just dependency files!)
 
 This is just the beginning - we've got big plans for the next year. For example,
 as well as continuing to improve the core of Dependabot we're planning to add
