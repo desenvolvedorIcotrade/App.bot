@@ -28,7 +28,7 @@ We'd love your thoughts as we develop auto-merging further -
 🍸
 
 **Update 2018-03-06:** We're already expanded the options for automerging! You
-can now select different settings from development and runtime dependencies:
+can now select different settings for development and runtime dependencies:
 
 <p class="image-medium">
   <img alt="Auto merge updated" style="max-width: 700px;" src="/images/blog/auto-merge-2.png">
