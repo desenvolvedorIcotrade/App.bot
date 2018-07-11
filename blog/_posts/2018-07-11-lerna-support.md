@@ -18,8 +18,8 @@ the monorepo. That meant extra setup, and lots of near-identical PRs to review.
 
 Now there's a better way: if you're using Lerna to manage a JavaScript monorepo
 you can just add the root directory to Dependabot. Then, when one of your
-dependencies needs updating, Dependabot will update it in all of you packages
-at once.
+dependencies needs updating, Dependabot will create a PR that updates it in all
+of your packages at once.
 
 We think the above behaviour is a big improvement, but if you prefer to old
 behaviour of receiving separate PRs to each package in your monorepo you can,
