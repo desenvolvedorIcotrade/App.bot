@@ -16,13 +16,15 @@ workspaces, each package had to be added to Dependabot individually. Then, when
 there were updates, Dependabot would create an individual PR for each package in
 the monorepo. That meant extra setup, and lots of near-identical PRs to review.
 
-Now there's a better way: if you're using Lerna to manage a JavaScript monorepo
-you can just add the root directory to Dependabot. Then, when one of your
-dependencies needs updating, Dependabot will create a PR that updates it in all
-of your packages at once.
+Now if you're using [Lerna][lerna] to manage a JavaScript monorepo you can just
+add the root directory to Dependabot. Then, when one of your dependencies needs
+updating, Dependabot will create a PR that updates it in all of your packages
+at once.
 
 We think the above behaviour is a big improvement, but if you prefer to old
 behaviour of receiving separate PRs to each package in your monorepo you can,
 of course, still add each package to Dependabot individually.
 
 🐉
+
+[lerna]: https://github.com/lerna/lerna
