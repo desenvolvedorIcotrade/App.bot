@@ -44,5 +44,8 @@ advisories for, and are hosting the advisory database [here][elixir-advisories].
 security advisories for, sourcing data from the
 [Node Security Working Group][node-security-working-group].
 
+**Yet another update:** We now also pull security advisory data from GitHub's
+vulnerability alerts database, which includes advisories for Python.
+
 [elixir-advisories]: https://github.com/dependabot/elixir-security-advisories
 [node-security-working-group]: https://github.com/nodejs/security-wg
