@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Announcing Go support"
-date:   2018-07-25 08:00:00 +0100
+date:   2018-07-26 04:00:00 +0100
 ---
 
 Using Go? If you're using `dep` for your dependency management then Dependabot
