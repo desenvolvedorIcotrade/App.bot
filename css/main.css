@@ -786,8 +786,8 @@ hr {
   height: 120px; }
   @media only screen and (min-width: 768px) {
     .language-box {
-      min-width: 150px;
-      max-width: 150px;
+      min-width: 140px;
+      max-width: 140px;
       flex: 1; } }
 
 a .language-box:hover {

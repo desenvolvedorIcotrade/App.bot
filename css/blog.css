@@ -41,8 +41,7 @@
 
 .blog .cta {
   color: #636779;
-  margin: 2rem 0;
-}
+  margin: 2rem 0; }
 
 @media only screen and (max-width: 767px) {
   .blog .footer {
