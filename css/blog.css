@@ -40,10 +40,9 @@
   width: 100%; }
 
 .blog .cta {
-  color: #636779; }
-  @media only screen and (max-width: 767px) {
-    .blog .cta {
-      margin: 1.5rem 0; } }
+  color: #636779;
+  margin: 2rem 0;
+}
 
 @media only screen and (max-width: 767px) {
   .blog .footer {
