@@ -8,7 +8,7 @@ Using Go? If you're using `dep` for your dependency management then Dependabot
 can now help you keep your Gopkg.toml and Gopkg.lock files up-to-date.
 
 <p class="image-medium">
-  <img src="/images/blog/go-logo.svg" alt="Go" height="100px" />
+  <img src="/images/blog/go-gopher.svg" alt="Go" height="100px" />
 </p>
 
 Here's how it works:
