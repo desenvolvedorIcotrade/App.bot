@@ -5,7 +5,7 @@ date:   2018-07-25 08:00:00 +0100
 ---
 
 Using Go? If you're using `dep` for your dependency management then Dependabot
-can now help you keep your Gopkg.toml and Gopkg.lock files up-to-date.
+can now help you keep your `Gopkg.toml` and `Gopkg.lock` files up-to-date.
 
 <p class="image-medium">
   <img src="/images/blog/go-gopher.svg" alt="Go" height="100px" />
