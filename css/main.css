@@ -765,7 +765,7 @@ hr {
   flex-direction: row;
   flex-wrap: wrap;
   margin: 0 auto;
-  max-width: 800px; }
+  max-width: 880px; }
   @media only screen and (min-width: 768px) {
     .language-boxes {
       justify-content: center; } }
@@ -786,8 +786,8 @@ hr {
   height: 120px; }
   @media only screen and (min-width: 768px) {
     .language-box {
-      min-width: 160px;
-      max-width: 160px;
+      min-width: 150px;
+      max-width: 150px;
       flex: 1; } }
 
 a .language-box:hover {
