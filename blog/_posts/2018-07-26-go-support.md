@@ -23,17 +23,19 @@ Here's how it works:
 
 We wanted to launch Go support as early as possible, so have released it
 in alpha. As such, there are a couple of caveats you should be aware of:
-- **Dependabot will generate an incorrect `inputs-hash` in your lockfile** which
-  is annoying, but the `inputs-hash` field is being removed in dep 0.5.0, which
-  is being released in less than 24 hours. 🎉
+- **Dependabot creates dep v0.5.0 format lockfiles**. If you're using a previous
+  version of dep we recommend you upgrade to v0.5.0 - it includes some big
+  performance improvements.
 - **Dependabot will always widen `Gopkg.toml` ranges** if they need to be
   updated. That's the right behaviour for libraries, but not for applications,
   and we can't tell them apart. We'll make it configurable soon.
 - **Dependabot doesn't yet support vendoring for Go dependencies** so if you
   commit a vendor folder Dependabot won't update it for you.
 
-We'll be working to fix all of the above over the next few weeks, as well as
-ironing out any bugs.
+We'll be working on the above and ironing out bugs over the next few weeks.
+We'll also be looking at adding support for vgo/modules - we prefer dep's
+approach, but if the community settles on vgo there will be an even bigger need
+for a tool to help keep dependencies up-to-date.
 
 We'd love your help to get Dependabot's Go support perfect. If you have any
 suggestions, or if you experience any issues, please don't hesitate to
