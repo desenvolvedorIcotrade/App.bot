@@ -26,12 +26,11 @@ in alpha. As such, there are a couple of caveats you should be aware of:
 - **Dependabot creates dep v0.5.0 format lockfiles**. If you're using a previous
   version of dep we recommend you upgrade to [v0.5.0][dep-v0.5.0] - it includes
   some big performance improvements.
-- **Dependabot will always widen `Gopkg.toml` ranges** if they need to be
-  updated. ~~That's the right behaviour for libraries, but not for applications,
+- ~~**Dependabot will always widen `Gopkg.toml` ranges** if they need to be
+  updated. That's the right behaviour for libraries, but not for applications,
   and Dependabot can't tell them apart. We'll make it configurable soon.~~
-  **Update:** Dependabot now checks all your top-level files looking for a
-  declaration of `package main`. If it finds it then it will update your
-  `Gopkg.toml` to match updates to your `Gopkg.lock`.
+  Dependabot now checks all your top-level files looking for a `package main`
+  declaration. If it finds one then it will treat your code as an application.
 - **Dependabot doesn't yet support vendoring for Go dependencies** so if you
   commit a vendor folder Dependabot won't update it for you.
 
