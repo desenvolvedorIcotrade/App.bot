@@ -30,7 +30,8 @@ in alpha. As such, there are a couple of caveats you should be aware of:
   updated. That's the right behaviour for libraries, but not for applications,
   and Dependabot can't tell them apart. We'll make it configurable soon.~~
   Dependabot now checks all your top-level files looking for a `package main`
-  declaration. If it finds one then it will treat your code as an application.
+  declaration. If it finds one it will keep your `Gopkg.toml` constraints
+  in line with your `Gopkg.lock` versions.
 - **Dependabot doesn't yet support vendoring for Go dependencies** so if you
   commit a vendor folder Dependabot won't update it for you.
 
