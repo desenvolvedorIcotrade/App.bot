@@ -28,7 +28,7 @@ in alpha. As such, there are a couple of caveats you should be aware of:
   some big performance improvements.
 - **Dependabot will always widen `Gopkg.toml` ranges** if they need to be
   updated. That's the right behaviour for libraries, but not for applications,
-  and we can't tell them apart. We'll make it configurable soon.
+  and Dependabot can't tell them apart. We'll make it configurable soon.
 - **Dependabot doesn't yet support vendoring for Go dependencies** so if you
   commit a vendor folder Dependabot won't update it for you.
 
