@@ -24,8 +24,8 @@ Here's how it works:
 We wanted to launch Go support as early as possible, so have released it
 in alpha. As such, there are a couple of caveats you should be aware of:
 - **Dependabot creates dep v0.5.0 format lockfiles**. If you're using a previous
-  version of dep we recommend you upgrade to v0.5.0 - it includes some big
-  performance improvements.
+  version of dep we recommend you upgrade to [v0.5.0][dep-v0.5.0] - it includes
+  some big performance improvements.
 - **Dependabot will always widen `Gopkg.toml` ranges** if they need to be
   updated. That's the right behaviour for libraries, but not for applications,
   and we can't tell them apart. We'll make it configurable soon.
@@ -44,3 +44,4 @@ suggestions, or if you experience any issues, please don't hesitate to
 🤖
 
 [feedback-link]: https://github.com/dependabot/feedback
+[dep-v0.5.0]: https://golang.github.io/dep/blog/2018/07/25/announce-v0.5.0.html
