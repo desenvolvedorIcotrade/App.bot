@@ -21,8 +21,10 @@ Here's how it works:
   commits.
 
 We'll be working on ironing out any bugs over the next few weeks, but
-Dependabot's Elm support should be feature complete right now. Give it a try
-and [let us know][feedback-link] if you have any feedback!
+Dependabot's Elm support should be feature complete right now. The only caveat
+is that currently Dependabot only works with Elm 0.18.
+
+Give it a try and [let us know][feedback-link] if you have any feedback!
 
 We'd like to say a huge thank you to [Juliano Solanho][juliano-twitter] for
 contributing all of the work on Elm support over at [Dependabot Core][elm-pr].
