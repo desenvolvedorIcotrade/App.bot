@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Announcing Elm support"
-date:   2018-08-03 07:00:00 +0100
+date:   2018-08-04 07:00:00 +0100
 ---
 
 Using Elm? Dependabot can now help you keep your `elm-package.json` file
