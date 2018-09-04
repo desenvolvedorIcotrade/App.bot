@@ -13,4 +13,4 @@ Run `yarn` then `gulp serve`.
 
 Run `bundle` then `jekyll serve`.
 
-file:///C:/Users/cleverTon/Desktop/index.html/index.html
+
